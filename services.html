@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Services &amp; Web Solutions - ZenithCraft</title>
+  <meta name="description" content="Explore custom web tool engineering, workflow automation, AI bot integrations, and bespoke data pipelines built by ZenithCraft Studio.">
+  <meta name="keywords" content="custom web tools, automation services, AI integration, enterprise solutions, custom web software">
+  <meta name="author" content="ZenithCraft Studio">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://zenithcraft.io/services.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zenithcraft.io/services.html">
+  <meta property="og:title" content="Custom Services &amp; Web Solutions - ZenithCraft">
+  <meta property="og:description" content="High-performance custom tools, automated workflows, and enterprise AI integrations.">
+  <meta property="og:image" content="https://zenithcraft.io/assets/images/og-services.png">
+
+  <!-- Schema.org Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Custom Web Tool & AI Engineering",
+    "provider": {
+      "@type": "Organization",
+      "name": "ZenithCraft Studio",
+      "url": "https://zenithcraft.io/"
+    },
+    "areaServed": "Global",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Engineering Services",
+      "itemListElement": [
+        { "@type": "Offer", "name": "Bespoke Web Utilities" },
+        { "@type": "Offer", "name": "AI Workflow Integration" },
+        { "@type": "Offer", "name": "API & Data Automation" }
+      ]
+    }
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: {} }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-slate-50 dark:bg-[#0b0f19] text-slate-900 dark:text-slate-100 min-h-screen flex flex-col font-sans transition-colors duration-300">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-[#111827]/80 border-b border-slate-200 dark:border-slate-800 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-cyan-400 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-indigo-500/25">
+          Z
+        </div>
+        <div>
+          <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-600 to-cyan-500 dark:from-indigo-400 dark:to-cyan-300 bg-clip-text text-transparent">ZenithCraft</span>
+          <span class="hidden sm:block text-[10px] font-semibold uppercase tracking-wider text-slate-400">Smart Web Suite</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600 dark:text-slate-300">
+        <a href="index.html" class="nav-link hover:text-indigo-600 dark:hover:text-indigo-400">Home</a>
+        <a href="tools.html" class="nav-link hover:text-indigo-600 dark:hover:text-indigo-400">Tools</a>
+        <a href="ai-assistant.html" class="nav-link hover:text-indigo-600 dark:hover:text-indigo-400">AI Assistant</a>
+        <a href="services.html" class="nav-link text-indigo-600 dark:text-indigo-400 font-bold">Services</a>
+        <a href="blogs.html" class="nav-link hover:text-indigo-600 dark:hover:text-indigo-400">Blog</a>
+        <a href="faqs.html" class="nav-link hover:text-indigo-600 dark:hover:text-indigo-400">FAQs</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <button class="theme-toggle-btn p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300" aria-label="Toggle Theme">
+          <svg class="w-5 h-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+          <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+        </button>
+        <button id="mobile-menu-btn" class="md:hidden p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800" aria-label="Open Menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-black/50 backdrop-blur-sm md:hidden">
+    <div class="fixed top-0 right-0 bottom-0 w-72 bg-white dark:bg-slate-900 border-l border-slate-200 dark:border-slate-800 p-6 flex flex-col">
+      <div class="flex items-center justify-between pb-6 border-b border-slate-100 dark:border-slate-800">
+        <span class="font-bold text-lg text-indigo-600">ZenithCraft</span>
+        <button id="mobile-menu-close" class="p-2 text-slate-500">✕</button>
+      </div>
+      <div class="flex flex-col gap-4 mt-6 text-base font-medium">
+        <a href="index.html" class="py-1">Home</a>
+        <a href="tools.html" class="py-1">Tools</a>
+        <a href="ai-assistant.html" class="py-1">AI Assistant</a>
+        <a href="services.html" class="py-1 text-indigo-600 font-bold">Services</a>
+        <a href="blogs.html" class="py-1">Blog</a>
+        <a href="faqs.html" class="py-1">FAQs</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="flex-1 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Services Hero -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-indigo-600 dark:text-indigo-400 mb-2 block">Professional Solutions</span>
+        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">
+          Bespoke Tools &amp; <span class="gradient-text">Automation Services</span>
+        </h1>
+        <p class="mt-4 text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+          Need a private online tool for your team, an automated internal pipeline, or an AI workflow built specifically for your business? We engineer tailored solutions from start to finish.
+        </p>
+      </div>
+
+      <!-- Service Offerings Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+        
+        <div class="glass-panel p-8 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-indigo-100 dark:bg-indigo-950/80 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-3xl mb-6">
+              🛠️
+            </div>
+            <h3 class="text-xl font-bold mb-3">Custom Web Tool Development</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+              We design and code dedicated calculators, file converters, data validators, or customer-facing interactive widgets tailored to your exact company branding.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><span class="text-emerald-500 font-bold">✓</span> 100% Client-side or Serverless</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-500 font-bold">✓</span> Zero recurring maintenance costs</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-500 font-bold">✓</span> Fast mobile-friendly interfaces</li>
+            </ul>
+          </div>
+          <a href="tools.html" class="btn-primary w-full text-center text-sm py-2.5">Explore Free Tools →</a>
+        </div>
+
+        <div class="glass-panel p-8 flex flex-col justify-between border-indigo-400/50 shadow-indigo-500/10 shadow-xl relative">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-indigo-600 text-white text-[11px] font-bold uppercase tracking-wider">
+            Most Popular
+          </div>
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-cyan-100 dark:bg-cyan-950/80 text-cyan-600 dark:text-cyan-400 flex items-center justify-center text-3xl mb-6">
+              🤖
+            </div>
+            <h3 class="text-xl font-bold mb-3">AI &amp; Smart Agent Integration</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+              Deploy custom AI chatbots, automatic email generators, or text analysis bots trained on your own manuals, documents, and product catalogs.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><span class="text-emerald-500 font-bold">✓</span> Integrated directly into your site</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-500 font-bold">✓</span> Custom prompt tuning &amp; guardrails</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-500 font-bold">✓</span> Multi-language support</li>
+            </ul>
+          </div>
+          <a href="ai-assistant.html" class="btn-primary w-full text-center text-sm py-2.5">Try AI Assistant →</a>
+        </div>
+
+        <div class="glass-panel p-8 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-purple-100 dark:bg-purple-950/80 text-purple-600 dark:text-purple-400 flex items-center justify-center text-3xl mb-6">
+              ⚡
+            </div>
+            <h3 class="text-xl font-bold mb-3">Workflow &amp; API Automation</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+              Connect your spreadsheets, CRMs, payment processors, and marketing tools so repetitive manual tasks happen automatically without human errors.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><span class="text-emerald-500 font-bold">✓</span> Automatic sync between web apps</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-500 font-bold">✓</span> Custom webhooks and alerts</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-500 font-bold">✓</span> Robust 99.9% uptime reliability</li>
+            </ul>
+          </div>
+          <a href="tools.html" class="btn-primary w-full text-center text-sm py-2.5">Explore Free Tools →</a>
+        </div>
+
+      </div>
+
+      <!-- 100% Free Guarantee Banner & Engagement Models -->
+      <div class="glass-panel p-8 sm:p-12 border-slate-200 dark:border-slate-800">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-50 dark:bg-emerald-950/80 border border-emerald-300 dark:border-emerald-700 text-emerald-700 dark:text-emerald-300 text-xs font-bold mb-3 shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            100% Free Platform Guarantee
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">Zero Cost for Online Tools</h2>
+          <p class="mt-2 text-sm text-slate-500">All tools, converters, calculators, and our AI assistant are completely free forever for every visitor.</p>
+        </div>
+
+        <div class="max-w-md mx-auto">
+          <div class="p-8 rounded-2xl bg-emerald-50/50 dark:bg-emerald-950/30 border-2 border-emerald-500 shadow-xl text-center">
+            <div class="inline-block px-3 py-1 rounded-full bg-emerald-600 text-white text-xs font-bold uppercase mb-3">Always 100% Free</div>
+            <h4 class="font-extrabold text-2xl mb-1 text-emerald-700 dark:text-emerald-400">All Online Tools &amp; AI</h4>
+            <p class="text-xs text-slate-500 mb-6">Complete browser utility suite with unlimited conversions</p>
+            <div class="text-4xl font-extrabold mb-6 text-emerald-600 dark:text-emerald-400">$0 <span class="text-xs text-slate-400 font-normal">Free Forever</span></div>
+            <ul class="text-xs text-slate-600 dark:text-slate-400 space-y-3 mb-8 text-left max-w-xs mx-auto">
+              <li class="flex items-center gap-2"><span class="text-emerald-500 font-bold">✓</span> All 18+ interactive online tools</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-500 font-bold">✓</span> Smart AI assistant chat workspace</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-500 font-bold">✓</span> Unlimited daily conversions &amp; exports</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-500 font-bold">✓</span> No account, credit card, or sign-up needed</li>
+            </ul>
+            <a href="tools.html" class="btn-primary w-full text-sm py-3 bg-emerald-600 hover:bg-emerald-700">Use Free Tools Now →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 py-8 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4">
+      &copy; 2026 ZenithCraft Studio. Professional web engineering with transparent pricing.
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

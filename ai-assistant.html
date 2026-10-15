@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart AI Assistant - ZenithCraft</title>
+  <meta name="description" content="Chat with ZenithCraft AI Assistant to rewrite text, summarize notes, draft polite emails, brainstorm ideas, and solve everyday questions with zero signup.">
+  <meta name="keywords" content="AI assistant, free AI chat, text rewriter, email writer, summarize notes, AI productivity helper">
+  <meta name="author" content="ZenithCraft Studio">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://zenithcraft.io/ai-assistant.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zenithcraft.io/ai-assistant.html">
+  <meta property="og:title" content="Smart AI Assistant - ZenithCraft">
+  <meta property="og:description" content="Get instant help with rewriting, emails, coding questions, and brainstorming in pure, easy English.">
+  <meta property="og:image" content="https://zenithcraft.io/assets/images/og-ai.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "ZenithCraft AI Assistant",
+    "url": "https://zenithcraft.io/ai-assistant.html",
+    "applicationCategory": "ProductivityApplication",
+    "description": "Smart conversational AI helper for writing, summarizing, and everyday problem solving."
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: {} }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-slate-50 dark:bg-[#0b0f19] text-slate-900 dark:text-slate-100 min-h-screen flex flex-col font-sans transition-colors duration-300">
+
+  <!-- TOP HEADER -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-[#111827]/80 border-b border-slate-200 dark:border-slate-800 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-cyan-400 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-indigo-500/25">
+          Z
+        </div>
+        <div>
+          <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-600 to-cyan-500 dark:from-indigo-400 dark:to-cyan-300 bg-clip-text text-transparent">ZenithCraft</span>
+          <span class="hidden sm:block text-[10px] font-semibold uppercase tracking-wider text-slate-400">Smart Web Suite</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600 dark:text-slate-300">
+        <a href="index.html" class="nav-link hover:text-indigo-600 dark:hover:text-indigo-400">Home</a>
+        <a href="tools.html" class="nav-link hover:text-indigo-600 dark:hover:text-indigo-400">Tools</a>
+        <a href="ai-assistant.html" class="nav-link text-indigo-600 dark:text-indigo-400 font-bold">AI Assistant</a>
+        <a href="services.html" class="nav-link hover:text-indigo-600 dark:hover:text-indigo-400">Services</a>
+        <a href="blogs.html" class="nav-link hover:text-indigo-600 dark:hover:text-indigo-400">Blog</a>
+        <a href="faqs.html" class="nav-link hover:text-indigo-600 dark:hover:text-indigo-400">FAQs</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <button class="theme-toggle-btn p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300" aria-label="Toggle Theme">
+          <svg class="w-5 h-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+          <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+        </button>
+        <button id="mobile-menu-btn" class="md:hidden p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800" aria-label="Open Menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-black/50 backdrop-blur-sm md:hidden">
+    <div class="fixed top-0 right-0 bottom-0 w-72 bg-white dark:bg-slate-900 border-l border-slate-200 dark:border-slate-800 p-6 flex flex-col">
+      <div class="flex items-center justify-between pb-6 border-b border-slate-100 dark:border-slate-800">
+        <span class="font-bold text-lg text-indigo-600">ZenithCraft</span>
+        <button id="mobile-menu-close" class="p-2 text-slate-500">✕</button>
+      </div>
+      <div class="flex flex-col gap-4 mt-6 text-base font-medium">
+        <a href="index.html" class="py-1">Home</a>
+        <a href="tools.html" class="py-1">Tools</a>
+        <a href="ai-assistant.html" class="py-1 text-indigo-600 font-bold">AI Assistant</a>
+        <a href="services.html" class="py-1">Services</a>
+        <a href="blogs.html" class="py-1">Blog</a>
+        <a href="faqs.html" class="py-1">FAQs</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="flex-1 py-8 max-w-5xl mx-auto px-4 sm:px-6 w-full flex flex-col">
+    
+    <!-- Title & Top Controls -->
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+      <div>
+        <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-1">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+          100% Free &amp; Unlimited AI Workspace (No Sign-Up)
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight">AI Writing &amp; Problem Solver</h1>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <button id="btn-export-chat" class="btn-secondary text-xs px-3.5 py-2">
+          <svg class="w-4 h-4 mr-1 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+          Export Chat
+        </button>
+        <button id="btn-clear-chat" class="btn-secondary text-xs px-3.5 py-2 text-red-500">
+          Clear
+        </button>
+      </div>
+    </div>
+
+    <!-- Suggested Prompts / Chips -->
+    <div class="mb-4">
+      <span class="text-xs font-semibold text-slate-500 block mb-2">Quick Starter Prompts (Click to try):</span>
+      <div class="flex items-center gap-2 overflow-x-auto pb-2 no-scrollbar">
+        <button class="prompt-chip px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800 text-xs font-medium text-slate-600 dark:text-slate-300 hover:border-indigo-500 hover:text-indigo-600 shrink-0 shadow-sm" data-prompt="Draft a polite email asking for a meeting this week.">
+          ✉️ Draft polite meeting email
+        </button>
+        <button class="prompt-chip px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800 text-xs font-medium text-slate-600 dark:text-slate-300 hover:border-indigo-500 hover:text-indigo-600 shrink-0 shadow-sm" data-prompt="Rewrite this sentence to be concise and confident: 'We are trying to see if we can maybe deliver the product next week.'">
+          ✍️ Rewrite sentence clearly
+        </button>
+        <button class="prompt-chip px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800 text-xs font-medium text-slate-600 dark:text-slate-300 hover:border-indigo-500 hover:text-indigo-600 shrink-0 shadow-sm" data-prompt="What are 3 golden rules for picking strong passwords?">
+          🔐 Password safety rules
+        </button>
+        <button class="prompt-chip px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800 text-xs font-medium text-slate-600 dark:text-slate-300 hover:border-indigo-500 hover:text-indigo-600 shrink-0 shadow-sm" data-prompt="Give me 5 creative name ideas for a smart digital tools website.">
+          💡 Startup name ideas
+        </button>
+      </div>
+    </div>
+
+    <!-- Chat Messages Window -->
+    <div class="glass-panel flex-1 flex flex-col h-[520px] rounded-2xl overflow-hidden shadow-xl border border-slate-200 dark:border-slate-800">
+      <div id="chat-messages" class="flex-1 p-6 overflow-y-auto space-y-4">
+        <!-- Rendered dynamically by ai-assistant.js -->
+      </div>
+
+      <!-- Input Box -->
+      <div class="p-4 bg-white/90 dark:bg-slate-900/90 border-t border-slate-200 dark:border-slate-800">
+        <form id="chat-form" class="flex items-center gap-3">
+          <input type="text" id="chat-input" placeholder="Type your question or request in plain English..." autocomplete="off" class="flex-1 px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+          <button type="submit" class="btn-primary py-3 px-5 shrink-0">
+            <span>Send</span>
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+          </button>
+        </form>
+        <div class="mt-2 text-center">
+          <span class="text-[11px] text-slate-400">ZenithCraft AI runs directly in your session. No history is collected on external servers.</span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 py-6 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4">
+      &copy; 2026 ZenithCraft Studio. Instant AI responses with zero account barrier.
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/ai-assistant.js"></script>
+</body>
+</html>

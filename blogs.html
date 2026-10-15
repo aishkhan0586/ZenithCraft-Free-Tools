@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guides &amp; Insights - ZenithCraft</title>
+  <meta name="description" content="In-depth, 1-page complete guides on image compression, in-browser privacy, password security, text diff comparison, JSON parsing, and daily mathematical shortcuts.">
+  <meta name="keywords" content="image compression guide, privacy in browser, password security, text diff tutorial, json guide, percentage math">
+  <meta name="author" content="ZenithCraft Editorial Team">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://zenithcraft.io/blogs.html">
+
+  <meta property="og:type" content="blog">
+  <meta property="og:url" content="https://zenithcraft.io/blogs.html">
+  <meta property="og:title" content="Guides &amp; Insights - ZenithCraft">
+  <meta property="og:description" content="Read full 1-page practical guides with visual diagrams, actionable tips, and zero technical jargon.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: {} }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-slate-50 dark:bg-[#0b0f19] text-slate-900 dark:text-slate-100 min-h-screen flex flex-col font-sans transition-colors duration-300">
+
+  <!-- TOP HEADER WITH DROPDOWNS -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-white/90 dark:bg-[#111827]/90 border-b border-slate-200 dark:border-slate-800 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-cyan-400 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-indigo-500/25">Z</div>
+        <div>
+          <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-600 to-cyan-500 dark:from-indigo-400 dark:to-cyan-300 bg-clip-text text-transparent">ZenithCraft</span>
+          <span class="hidden sm:block text-[10px] font-semibold uppercase tracking-wider text-slate-400">Guides &amp; Insights</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-6 font-medium text-sm text-slate-700 dark:text-slate-200">
+        <a href="index.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Home</a>
+        <a href="tools.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">All 18+ Tools</a>
+        <a href="ai-assistant.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">AI Assistant</a>
+        <a href="blogs.html" class="text-indigo-600 dark:text-indigo-400 font-bold">Blog &amp; Guides</a>
+        <a href="faqs.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">FAQs</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <button class="theme-toggle-btn p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+          <svg class="w-5 h-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+          <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+        </button>
+        <a href="tools.html" class="btn-primary text-xs py-2 px-4">Open Tools</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-1 py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- ================= BLOG LISTING VIEW ================= -->
+      <div id="blog-listing-view" class="space-y-12">
+        <div class="text-center max-w-3xl mx-auto">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-50 dark:bg-indigo-950/80 border border-indigo-200 dark:border-indigo-800 text-indigo-600 dark:text-indigo-400 text-xs font-semibold mb-3">
+            <span>📚</span> Complete 1-Page Guides with Visual Infographics
+          </div>
+          <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
+            Learn, Build &amp; <span class="gradient-text">Master Web Utilities</span>
+          </h1>
+          <p class="mt-3 text-slate-600 dark:text-slate-400 text-base">
+            Click "Read Full Article" on any guide below to open the complete, comprehensive 1-page article.
+          </p>
+        </div>
+
+        <!-- Articles Grid (6 Full Guides) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- Card 1 -->
+          <article class="glass-panel p-6 flex flex-col justify-between hover:-translate-y-1 transition-all">
+            <div>
+              <div class="w-full h-40 rounded-xl bg-gradient-to-tr from-indigo-500/20 to-cyan-500/20 border border-indigo-500/20 flex items-center justify-center text-4xl mb-4">
+                📉
+              </div>
+              <div class="flex items-center gap-2 text-[11px] font-semibold text-indigo-600 dark:text-indigo-400 mb-2">
+                <span>Image Tech</span> • <span>6 min read</span>
+              </div>
+              <h2 class="font-bold text-lg mb-2">In-Browser Image Compression: How It Works Without Server Uploads</h2>
+              <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
+                Discover how HTML5 Canvas and lossy quantization shrink image files by 80% directly inside your browser without uploading to external clouds.
+              </p>
+            </div>
+            <button onclick="openArticle('article-compress')" class="btn-primary text-xs py-2 w-full text-center">Read Full Article (1 Page) →</button>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="glass-panel p-6 flex flex-col justify-between hover:-translate-y-1 transition-all">
+            <div>
+              <div class="w-full h-40 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-emerald-500/20 border border-cyan-500/20 flex items-center justify-center text-4xl mb-4">
+                🛡️
+              </div>
+              <div class="flex items-center gap-2 text-[11px] font-semibold text-cyan-600 dark:text-cyan-400 mb-2">
+                <span>Privacy &amp; Security</span> • <span>7 min read</span>
+              </div>
+              <h2 class="font-bold text-lg mb-2">Client-Side Privacy: Why Sensitive Documents Should Never Touch Cloud Servers</h2>
+              <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
+                Why uploading confidential contracts, IDs, and financial statements to unknown conversion portals is dangerous and how local tools protect you.
+              </p>
+            </div>
+            <button onclick="openArticle('article-privacy')" class="btn-primary text-xs py-2 w-full text-center">Read Full Article (1 Page) →</button>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="glass-panel p-6 flex flex-col justify-between hover:-translate-y-1 transition-all">
+            <div>
+              <div class="w-full h-40 rounded-xl bg-gradient-to-tr from-purple-500/20 to-pink-500/20 border border-purple-500/20 flex items-center justify-center text-4xl mb-4">
+                🔐
+              </div>
+              <div class="flex items-center gap-2 text-[11px] font-semibold text-purple-600 dark:text-purple-400 mb-2">
+                <span>Cryptography</span> • <span>5 min read</span>
+              </div>
+              <h2 class="font-bold text-lg mb-2">How to Create Passwords That Supercomputers Cannot Crack</h2>
+              <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
+                A simple guide to password entropy, character sets, and using browser crypto algorithms to generate unbreakable security keys.
+              </p>
+            </div>
+            <button onclick="openArticle('article-password')" class="btn-primary text-xs py-2 w-full text-center">Read Full Article (1 Page) →</button>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="glass-panel p-6 flex flex-col justify-between hover:-translate-y-1 transition-all">
+            <div>
+              <div class="w-full h-40 rounded-xl bg-gradient-to-tr from-emerald-500/20 to-teal-500/20 border border-emerald-500/20 flex items-center justify-center text-4xl mb-4">
+                🔍
+              </div>
+              <div class="flex items-center gap-2 text-[11px] font-semibold text-emerald-600 dark:text-emerald-400 mb-2">
+                <span>Editing &amp; Writing</span> • <span>6 min read</span>
+              </div>
+              <h2 class="font-bold text-lg mb-2">Mastering Text Diff &amp; Duplicate Detection for Writers &amp; Developers</h2>
+              <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
+                How comparing draft versions side-by-side saves editing time, avoids plagiarism, and catches subtle accidental deletions.
+              </p>
+            </div>
+            <button onclick="openArticle('article-diff')" class="btn-primary text-xs py-2 w-full text-center">Read Full Article (1 Page) →</button>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="glass-panel p-6 flex flex-col justify-between hover:-translate-y-1 transition-all">
+            <div>
+              <div class="w-full h-40 rounded-xl bg-gradient-to-tr from-amber-500/20 to-orange-500/20 border border-amber-500/20 flex items-center justify-center text-4xl mb-4">
+                ⚡
+              </div>
+              <div class="flex items-center gap-2 text-[11px] font-semibold text-amber-600 dark:text-amber-400 mb-2">
+                <span>Developer Guide</span> • <span>5 min read</span>
+              </div>
+              <h2 class="font-bold text-lg mb-2">Demystifying JSON: The Universal Language of Modern Web Apps</h2>
+              <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
+                A plain English breakdown of key-value pairs, nested arrays, and why formatting tools prevent catastrophic web mistakes.
+              </p>
+            </div>
+            <button onclick="openArticle('article-json')" class="btn-primary text-xs py-2 w-full text-center">Read Full Article (1 Page) →</button>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="glass-panel p-6 flex flex-col justify-between hover:-translate-y-1 transition-all">
+            <div>
+              <div class="w-full h-40 rounded-xl bg-gradient-to-tr from-blue-500/20 to-indigo-500/20 border border-blue-500/20 flex items-center justify-center text-4xl mb-4">
+                📊
+              </div>
+              <div class="flex items-center gap-2 text-[11px] font-semibold text-blue-600 dark:text-blue-400 mb-2">
+                <span>Everyday Math</span> • <span>5 min read</span>
+              </div>
+              <h2 class="font-bold text-lg mb-2">Everyday Math Shortcuts: Percentages, Data Units &amp; Age Calculations</h2>
+              <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
+                Master simple mental math tricks to calculate exam marks percentages, store discounts, and accurate date milestones.
+              </p>
+            </div>
+            <button onclick="openArticle('article-math')" class="btn-primary text-xs py-2 w-full text-center">Read Full Article (1 Page) →</button>
+          </article>
+
+        </div>
+      </div>
+
+
+      <!-- ================= ARTICLE FULL-PAGE READER VIEW ================= -->
+      <div id="blog-reader-view" class="hidden">
+        
+        <!-- Back Navigation Button -->
+        <div class="mb-8 flex items-center justify-between">
+          <button onclick="closeArticle()" class="btn-secondary text-xs px-4 py-2 flex items-center gap-2">
+            <span>←</span> Back to All Guides
+          </button>
+          <span class="text-xs text-slate-400">Complete 1-Page In-Depth Guide</span>
+        </div>
+
+        <!-- ARTICLE CONTAINER -->
+        <div id="full-article-content" class="glass-panel p-8 sm:p-12 space-y-8">
+          <!-- Filled dynamically by JavaScript -->
+        </div>
+
+        <div class="mt-8 text-center">
+          <button onclick="closeArticle()" class="btn-secondary text-xs px-6 py-2.5">← Back to All Guides</button>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 py-8 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4">
+      &copy; 2026 ZenithCraft Studio. All guides written in clear, accessible English with practical illustrations.
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Rich Full 1-Page Article Contents
+    const articles = {
+      'article-compress': {
+        title: "The Ultimate Guide to In-Browser Image Compression & Resizing (2026 Edition)",
+        badge: "Image Technology & Web Performance",
+        readTime: "6 min read",
+        author: "By Alex Rivera, Performance Lead",
+        date: "October 14, 2026",
+        imageEmoji: "📉",
+        summary: "Most websites require photos under 500 KB or 1 MB for job applications, passports, and portal submissions. Learn how in-browser HTML5 Canvas compression eliminates file bloat by up to 80% without losing visual clarity.",
+        body: `
+          <div class="space-y-6 text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+            
+            <!-- Graphic Illustration Box -->
+            <div class="p-6 rounded-2xl bg-indigo-50 dark:bg-slate-900 border border-indigo-200 dark:border-indigo-900/60 text-center">
+              <div class="max-w-md mx-auto grid grid-cols-3 items-center gap-2 text-xs">
+                <div class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
+                  <span class="block text-xl mb-1">📸</span>
+                  <strong>Original Photo</strong>
+                  <span class="block text-red-500 font-bold mt-1">4.2 MB</span>
+                </div>
+                <div class="text-indigo-600 font-bold text-lg">➔ 80% Lossless Reduction ➔</div>
+                <div class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
+                  <span class="block text-xl mb-1">⚡</span>
+                  <strong>ZenithCraft Compressed</strong>
+                  <span class="block text-emerald-500 font-bold mt-1">480 KB</span>
+                </div>
+              </div>
+              <p class="text-[11px] text-slate-500 mt-3">Visual comparison: Millions of uncompressed metadata bytes stripped, retaining full sharp detail.</p>
+            </div>
+
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Why Photo Files Are Unnecessarily Huge</h3>
+            <p>
+              When you take a picture with a modern smartphone, the camera saves enormous amounts of hidden data: camera sensor specifications, focal length, timestamps, geographical GPS coordinates, and raw color profiles. For simple online use — such as uploading an ID proof, attaching an image to a job application, or embedding an illustration into a website — 90% of this extra data is completely useless.
+            </p>
+
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">How In-Browser Compression Works</h3>
+            <p>
+              Traditional online converters send your personal image over the internet to their servers. The server runs an image processing script and streams it back. This creates two problems:
+            </p>
+            <ul class="list-disc pl-6 space-y-2">
+              <li><strong>Privacy Violations:</strong> Your personal photos, IDs, or confidential product mockups are saved on foreign servers.</li>
+              <li><strong>Sluggish Upload Times:</strong> If your internet is slow, waiting to upload a 10 MB image and then waiting to download it back takes minutes.</li>
+            </ul>
+            <p>
+              In contrast, <strong>ZenithCraft</strong> uses native <strong>HTML5 Canvas API</strong>. The moment you drop an image, your browser decodes the pixel grid into memory, optimizes the color palette, and exports a clean JPEG or WEBP file in under 0.2 seconds. Nothing ever leaves your device.
+            </p>
+
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Best Practices for Common Image Tasks</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+              <div class="p-4 rounded-xl bg-slate-100 dark:bg-slate-800/80">
+                <h4 class="font-bold text-xs uppercase text-indigo-500 mb-1">Passports &amp; Government Portals</h4>
+                <p class="text-xs">Set the quality slider to 70% and pixel width to 600px. This consistently delivers sharp images under the required 100 KB limit.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-100 dark:bg-slate-800/80">
+                <h4 class="font-bold text-xs uppercase text-cyan-500 mb-1">Web Design &amp; Blog Posts</h4>
+                <p class="text-xs">Convert JPG/PNG to WEBP format. WEBP offers identical visual fidelity while saving an additional 25% to 35% in file size.</p>
+              </div>
+            </div>
+
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Summary Checklist</h3>
+            <p>
+              Before sharing any image online:
+              1. Resize dimensions to match where it will be viewed (rarely do you need more than 1920px).
+              2. Compress with a 70% to 80% quality factor.
+              3. Check the final file size on ZenithCraft's live counter before downloading.
+            </p>
+          </div>
+        `
+      },
+      'article-privacy': {
+        title: "Client-Side Privacy: Why Sensitive Documents Should Never Touch Cloud Servers",
+        badge: "Data Protection & Digital Safety",
+        readTime: "7 min read",
+        author: "By Sarah Jenkins, Security Architect",
+        date: "October 12, 2026",
+        imageEmoji: "🛡️",
+        summary: "Every time you use random online file converters, you risk handing sensitive tax documents, passwords, and private letters to unknown companies. Discover how client-side architecture guarantees complete privacy.",
+        body: `
+          <div class="space-y-6 text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+            
+            <div class="p-6 rounded-2xl bg-cyan-50 dark:bg-slate-900 border border-cyan-200 dark:border-cyan-900/60 text-center">
+              <div class="max-w-lg mx-auto text-xs grid grid-cols-2 gap-4">
+                <div class="p-3 bg-red-500/10 border border-red-400 rounded-xl">
+                  <span class="text-red-500 font-bold block mb-1">❌ Traditional Converter Sites</span>
+                  <p class="text-slate-500">Uploads files to unknown cloud server ➔ Stored in temp database ➔ Risk of data harvesting.</p>
+                </div>
+                <div class="p-3 bg-emerald-500/10 border border-emerald-400 rounded-xl">
+                  <span class="text-emerald-500 font-bold block mb-1">✅ ZenithCraft Client-Side</span>
+                  <p class="text-slate-500">Calculates purely inside your browser memory ➔ Zero bytes sent to server ➔ Absolute privacy.</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">The Hidden Danger of "Free" Online Converters</h3>
+            <p>
+              Millions of people search for "Free PDF converter" or "Online text difference checker" every single day. They paste contracts, financial balances, customer email lists, and personal identification scans into web forms without thinking about what happens after they hit "Submit".
+            </p>
+            <p>
+              On traditional websites, your uploaded document is stored in a temporary folder on an AWS or Google Cloud bucket. Even if the website claims to delete files after 1 hour, that data remains vulnerable to automated scraping, misconfigured server permissions, and insider snooping.
+            </p>
+
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">How Client-Side Code Solves This Forever</h3>
+            <p>
+              Client-side computing means the computer program (JavaScript) downloads to your browser once, and then executes completely inside your device's memory. When you use our <strong>Plagiarism Checker, Text Diff, Word Counter, or Password Maker</strong>:
+            </p>
+            <ul class="list-disc pl-6 space-y-2">
+              <li>No API network calls are triggered.</li>
+              <li>No database records are created.</li>
+              <li>You can even disconnect your Wi-Fi or turn on Airplane mode, and the tools continue working flawlessly!</li>
+            </ul>
+
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">3 Golden Rules for Digital Privacy in 2026</h3>
+            <div class="space-y-2 text-xs">
+              <p><strong>1. Inspect the Network Tab:</strong> In Chrome or Edge, open DevTools (F12) ➔ Network. When you click a tool, verify that no POST requests containing your private data are being sent.</p>
+              <p><strong>2. Prefer Browser Tools for Passwords:</strong> Never generate or test sensitive passwords on cloud portals that require server round-trips.</p>
+              <p><strong>3. Keep Offline Backups:</strong> Store important documents on your local hard drive or personal USB rather than temporary cloud lockers.</p>
+            </div>
+          </div>
+        `
+      },
+      'article-password': {
+        title: "How to Create Passwords That Supercomputers Cannot Crack",
+        badge: "Cybersecurity & Entropy",
+        readTime: "5 min read",
+        author: "By David Chen, Crypto Engineer",
+        date: "October 10, 2026",
+        imageEmoji: "🔐",
+        summary: "Short passwords with simple word substitutions can be cracked in less than 3 seconds. Learn the mathematics of entropy and how hardware random seeds generate unbreakable credentials.",
+        body: `
+          <div class="space-y-6 text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+            
+            <div class="p-6 rounded-2xl bg-purple-50 dark:bg-slate-900 border border-purple-200 dark:border-purple-900/60 text-center">
+              <h4 class="font-bold text-sm text-purple-700 dark:text-purple-300 mb-3">Time Needed by Hackers to Crack Passwords:</h4>
+              <div class="grid grid-cols-3 gap-2 text-xs max-w-md mx-auto">
+                <div class="p-2.5 rounded-lg bg-red-500/10 text-red-500 font-bold">8 Chars (Simple):<br><span class="text-base">0.4 Seconds</span></div>
+                <div class="p-2.5 rounded-lg bg-amber-500/10 text-amber-500 font-bold">12 Chars (Mixed):<br><span class="text-base">3 Weeks</span></div>
+                <div class="p-2.5 rounded-lg bg-emerald-500/10 text-emerald-500 font-bold">16 Chars (Crypto):<br><span class="text-base">100+ Million Years</span></div>
+              </div>
+            </div>
+
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Why "P@ssw0rd123" Is Instantly Broken</h3>
+            <p>
+              Modern hacking tools do not guess randomly letter by letter. They utilize automated "dictionary attacks" coupled with known human substitution tables (replacing 'a' with '@', 'o' with '0', or adding '!' at the end). These rule-based algorithms can test over 100 billion combinations per second on consumer graphics cards.
+            </p>
+
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">The Power of Length Over Complexity</h3>
+            <p>
+              Every character you add to a password increases the possible combinations exponentially. An 8-character password chosen from 90 characters gives 90^8 combinations (~43 trillion). But a 16-character password gives 90^16 combinations — a number with 32 zeros!
+            </p>
+
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Using ZenithCraft's Cryptographic Generator</h3>
+            <p>
+              Our built-in password generator uses <code>window.crypto.getRandomValues()</code>. Unlike regular <code>Math.random()</code>, which is pseudo-random and predictable, the Web Cryptography API samples real hardware entropy (thermal noise in your CPU) to ensure true mathematical randomness.
+            </p>
+          </div>
+        `
+      },
+      'article-diff': {
+        title: "Mastering Text Diff & Duplicate Detection for Writers & Developers",
+        badge: "Writing & Coding Workflows",
+        readTime: "6 min read",
+        author: "By Maya Patel, Web Developer",
+        date: "October 08, 2026",
+        imageEmoji: "🔍",
+        summary: "Spotting tiny punctuation changes, repeated paragraphs, or unauthorized alterations across two documents is exhausting by eye. Learn how automated diff checking streamlines editing.",
+        body: `
+          <div class="space-y-6 text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+            
+            <div class="p-4 rounded-xl bg-slate-100 dark:bg-slate-800 font-mono text-xs space-y-1">
+              <div class="text-slate-500">1 &nbsp;The meeting will start promptly at 9:00 AM.</div>
+              <div class="bg-red-500/15 text-red-500 p-1 rounded">- &nbsp;Please bring your old printed binders.</div>
+              <div class="bg-emerald-500/15 text-emerald-500 p-1 rounded">+ &nbsp;Please bring your laptop or tablet with updated slides.</div>
+              <div class="text-slate-500">3 &nbsp;Refreshments will be served in the main lobby.</div>
+            </div>
+
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">The Human Eye vs. Automated Diff Algorithms</h3>
+            <p>
+              When proofreading a 10-page document or comparing two versions of a contract, human beings naturally skim familiar sentences. Subtly changed clauses, altered dates, or removed disclaimers are easily missed.
+            </p>
+            <p>
+              Text Diff algorithms break documents into line arrays and compute the Longest Common Subsequence (LCS). This highlights every addition in green and every deletion in red, allowing you to review 5,000 words of changes in under 30 seconds.
+            </p>
+
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Practical Applications</h3>
+            <ul class="list-disc pl-6 space-y-1.5">
+              <li><strong>Legal &amp; Business Contracts:</strong> Compare incoming revised agreements against your original draft before signing.</li>
+              <li><strong>Student Essays:</strong> Use our Plagiarism &amp; Duplicate Finder to identify repeated sentences and redundant filler phrases.</li>
+              <li><strong>Software &amp; Web Coding:</strong> Verify configuration changes before deploying updates to a live server.</li>
+            </ul>
+          </div>
+        `
+      },
+      'article-json': {
+        title: "Demystifying JSON: The Universal Language of Modern Web Apps",
+        badge: "Web Architecture Basics",
+        readTime: "5 min read",
+        author: "By ZenithCraft Engineering",
+        date: "October 05, 2026",
+        imageEmoji: "⚡",
+        summary: "JSON powers 99% of web applications, mobile apps, and APIs. Here is what JSON actually is, how key-value structures work, and why formatting tools prevent catastrophic bugs.",
+        body: `
+          <div class="space-y-6 text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">What is JSON?</h3>
+            <p>
+              JSON stands for <strong>JavaScript Object Notation</strong>. Despite the name, it is completely language-independent. Whether an app is coded in Python, PHP, Java, or Swift, they all speak JSON to exchange data over the internet.
+            </p>
+            <p>
+              JSON is simply text structured like a clean filing cabinet using keys and values:
+            </p>
+            <pre class="p-4 rounded-xl bg-slate-900 text-indigo-300 font-mono text-xs overflow-x-auto">
+{
+  "username": "john_doe",
+  "plan": "Free_Forever",
+  "tools_used": 18,
+  "verified": true
+}</pre>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Why JSON Formatting &amp; Validation Matters</h3>
+            <p>
+              When APIs transmit data, they compress it into a single unbroken line (minified JSON) to save bandwidth. To humans, a 5,000-character single-line string looks like gibberish. Moreover, a single missing comma or unclosed quotation mark will cause the entire application to crash.
+            </p>
+            <p>
+              ZenithCraft's <strong>JSON Validator</strong> instantly highlights syntax errors and prettifies the tree structure with 2-space indentation so you can inspect data comfortably.
+            </p>
+          </div>
+        `
+      },
+      'article-math': {
+        title: "Everyday Math Shortcuts: Percentages, Data Units & Age Calculations",
+        badge: "Daily Productivity Math",
+        readTime: "5 min read",
+        author: "By ZenithCraft Editorial",
+        date: "October 02, 2026",
+        imageEmoji: "📊",
+        summary: "From calculating 18% restaurant tips and store discounts to converting 500 MB into GB for phone plans, learn the fast formulas that simplify everyday digital math.",
+        body: `
+          <div class="space-y-6 text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">The Reversibility Trick for Percentages</h3>
+            <p>
+              Here is a golden mental shortcut: <strong>X% of Y is always equal to Y% of X!</strong>
+            </p>
+            <p>
+              Trying to calculate <strong>16% of 50</strong> in your head feels difficult. But flip it: what is <strong>50% of 16</strong>? Half of 16 is <strong>8</strong>! Therefore, 16% of 50 is exactly 8.
+            </p>
+
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Understanding Binary Data Storage (MB vs. GB)</h3>
+            <p>
+              Why does a 1 TB hard drive only show 931 GB on Windows? Because computer memory works in binary (powers of 2).
+              While marketing decimal units use 1,000 bytes per KB, operating systems calculate in binary: <strong>1,024 Bytes = 1 KB</strong>, and <strong>1,024 MB = 1 GB</strong>.
+              Use our <strong>Data Storage Converter</strong> to see exact byte counts for cloud drives and mobile cellular data limits.
+            </p>
+          </div>
+        `
+      }
+    };
+
+    function openArticle(articleId) {
+      const art = articles[articleId];
+      if (!art) return;
+
+      const container = document.getElementById('full-article-content');
+      container.innerHTML = `
+        <div class="border-b border-slate-200 dark:border-slate-800 pb-6">
+          <div class="flex items-center gap-2 text-xs font-bold text-indigo-600 dark:text-indigo-400 mb-2">
+            <span class="px-2.5 py-0.5 rounded-full bg-indigo-50 dark:bg-indigo-950">${art.badge}</span>
+            <span>• ${art.readTime}</span>
+            <span>• ${art.date}</span>
+          </div>
+          <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-3">${art.title}</h1>
+          <div class="text-xs text-slate-500 font-medium">${art.author}</div>
+        </div>
+
+        <div class="p-4 rounded-xl bg-indigo-50/50 dark:bg-slate-900/60 border border-indigo-100 dark:border-indigo-950 text-sm italic text-slate-600 dark:text-slate-300">
+          "${art.summary}"
+        </div>
+
+        <div>
+          ${art.body}
+        </div>
+      `;
+
+      document.getElementById('blog-listing-view').classList.add('hidden');
+      document.getElementById('blog-reader-view').classList.remove('hidden');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.location.hash = articleId;
+    }
+
+    function closeArticle() {
+      document.getElementById('blog-reader-view').classList.add('hidden');
+      document.getElementById('blog-listing-view').classList.remove('hidden');
+      window.location.hash = '';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Check hash on load
+    window.addEventListener('DOMContentLoaded', () => {
+      const hash = window.location.hash.replace('#', '');
+      if (hash && articles[hash]) {
+        openArticle(hash);
+      }
+    });
+  </script>
+</body>
+</html>
