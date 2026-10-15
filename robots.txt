@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://zenithcraft.io/sitemap.xml
+Sitemap: https://aishkhan0586.github.io/ZenithCraft-Free-Tools/sitemap.xml
