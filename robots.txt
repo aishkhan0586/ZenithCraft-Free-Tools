@@ -1,4 +1,21 @@
 User-agent: *
 Allow: /
 
+# Sitemap
 Sitemap: https://aishkhan0586.github.io/ZenithCraft-Free-Tools/sitemap.xml
+
+# AI Crawlers — Allow indexing for AEO/GEO
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /

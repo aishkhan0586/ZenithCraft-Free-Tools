@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Age Calculator — Exact Years, Months, Days | ZenithCraft</title>
+  <meta name="description" content="Calculate your exact age in years, months and days. See how many days old you are and get a next birthday countdown. Free, no signup, works worldwide — UK, USA, Australia, Canada, UAE.">
+  <meta name="keywords" content="age calculator, exact age calculator, how many days old am I, age calculator UK, age calculator free, birthday countdown calculator, age calculator years months days">
+  <link rel="canonical" href="https://aishkhan0586.github.io/ZenithCraft-Free-Tools/tools/age-calculator.html">
+  <meta name="coverage" content="Worldwide"><meta name="distribution" content="global"><meta name="geo.placename" content="Worldwide"><meta name="language" content="English"><meta name="target" content="all"><meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta property="og:title" content="Free Age Calculator — Exact Years, Months, Days | ZenithCraft">
+  <meta property="og:description" content="Calculate exact age and next birthday countdown free. Used worldwide."><meta property="og:type" content="website">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"ZenithCraft Age Calculator","description":"Free online age calculator. Find your exact age in years, months, days and hours. Get next birthday countdown. No signup required. Used worldwide.","url":"https://aishkhan0586.github.io/ZenithCraft-Free-Tools/tools/age-calculator.html","applicationCategory":"UtilityApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"areaServed":"Worldwide"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I calculate my exact age in years, months and days?","acceptedAnswer":{"@type":"Answer","text":"Enter your date of birth in ZenithCraft's Age Calculator and click Calculate. You instantly see your exact age in years, months, days and total days lived, plus a countdown to your next birthday."}},{"@type":"Question","name":"How many days old am I?","acceptedAnswer":{"@type":"Answer","text":"ZenithCraft's Age Calculator shows your exact total days lived alongside your age in years and months. Enter your birth date and get the answer instantly, free."}},{"@type":"Question","name":"Can I calculate age for UK retirement or pension planning?","acceptedAnswer":{"@type":"Answer","text":"Yes. The calculator works for any date and any country. UK users use it for retirement planning, pension age checks and official form requirements."}},{"@type":"Question","name":"Does the age calculator work for Saudi Arabia iqama or UAE visa age checks?","acceptedAnswer":{"@type":"Answer","text":"Yes. Enter any birth date and the calculator shows your exact current age — useful for iqama renewals, UAE visa applications and other official documents requiring precise age."}},{"@type":"Question","name":"Is the age calculator free?","acceptedAnswer":{"@type":"Answer","text":"Yes. Completely free, no account, no signup, no limit. Works in any browser worldwide."}}]}</script>
+  <style>
+    :root{--bg:#f8f8fc;--surface:#fff;--border:#e4e4f0;--purple:#5b4fcf;--purple-light:#ede9ff;--purple-dark:#3d33a0;--text:#1a1a2e;--text-secondary:#5a5a7a;--green:#16a34a;--green-bg:#f0fdf4;--shadow:0 2px 12px rgba(91,79,207,0.08)}
+    @media(prefers-color-scheme:dark){:root{--bg:#0f0f1a;--surface:#1a1a2e;--border:#2a2a45;--purple:#7c6fdf;--purple-light:#2a2545;--purple-dark:#a99ef5;--text:#f0f0ff;--text-secondary:#9090b8;--green:#4ade80;--green-bg:#052e16}}
+    *{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    nav{background:var(--surface);border-bottom:1px solid var(--border);padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:56px;position:sticky;top:0;z-index:100}
+    .nav-logo{font-weight:700;font-size:1.1rem;color:var(--purple);text-decoration:none}.nav-links{display:flex;gap:20px;list-style:none}.nav-links a{color:var(--text-secondary);text-decoration:none;font-size:.9rem}.nav-links a:hover{color:var(--purple)}
+    .breadcrumb{padding:12px 24px;font-size:.82rem;color:var(--text-secondary);max-width:900px;margin:0 auto}.breadcrumb a{color:var(--purple);text-decoration:none}.breadcrumb span{margin:0 6px}
+    .hero{max-width:900px;margin:0 auto;padding:36px 24px 24px}
+    .tool-badge{display:inline-block;background:var(--purple-light);color:var(--purple);font-size:.75rem;font-weight:600;padding:4px 12px;border-radius:20px;margin-bottom:14px}
+    h1{font-size:clamp(1.6rem,4vw,2.2rem);font-weight:800;margin-bottom:10px;line-height:1.2}
+    .hero-desc{font-size:1rem;color:var(--text-secondary);margin-bottom:18px;max-width:620px}
+    .trust-badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
+    .badge{background:var(--green-bg);color:var(--green);font-size:.78rem;font-weight:600;padding:4px 12px;border-radius:20px;border:1px solid currentColor}
+    .tool-box{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:28px;max-width:900px;margin:0 auto 32px;box-shadow:var(--shadow)}
+    .input-group{margin-bottom:16px}
+    .input-group label{display:block;font-weight:600;font-size:.9rem;margin-bottom:6px}
+    .input-group input{width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:10px;font-size:1rem;background:var(--bg);color:var(--text)}
+    .input-group input:focus{outline:2px solid var(--purple);border-color:transparent}
+    .btn{background:var(--purple);color:#fff;border:none;padding:12px 28px;border-radius:10px;font-size:1rem;font-weight:700;cursor:pointer;width:100%;margin-top:4px;transition:background .2s}
+    .btn:hover{background:var(--purple-dark)}
+    .result-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;margin-top:20px;display:none}
+    .result-grid.active{display:grid}
+    .result-card{background:var(--purple-light);border-radius:12px;padding:16px;text-align:center}
+    .result-num{font-size:1.8rem;font-weight:800;color:var(--purple)}
+    .result-label{font-size:.78rem;color:var(--text-secondary);margin-top:4px;font-weight:600}
+    .birthday-box{background:var(--green-bg);border:1px solid var(--green);border-radius:12px;padding:16px;margin-top:14px;text-align:center;display:none;color:var(--green);font-weight:700}
+    .birthday-box.active{display:block}
+    .section{max-width:900px;margin:0 auto 32px;padding:0 24px}.section h2{font-size:1.3rem;font-weight:700;margin-bottom:18px}
+    .faq-list{display:grid;gap:12px}.faq-item{background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+    .faq-q{padding:16px 20px;font-weight:700;font-size:.95rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px}.faq-q::after{content:'+';font-size:1.2rem;color:var(--purple);flex-shrink:0}.faq-item.open .faq-q::after{content:'−'}
+    .faq-a{padding:0 20px;max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s;font-size:.9rem;color:var(--text-secondary);line-height:1.6}.faq-item.open .faq-a{max-height:300px;padding:0 20px 16px}
+    .related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+    .related-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px;text-decoration:none;color:var(--text);transition:border-color .2s}.related-card:hover{border-color:var(--purple)}
+    .related-icon{font-size:1.5rem;margin-bottom:6px}.related-title{font-weight:700;font-size:.9rem;margin-bottom:2px}.related-desc{font-size:.78rem;color:var(--text-secondary)}
+    footer{background:var(--surface);border-top:1px solid var(--border);padding:24px;text-align:center;font-size:.82rem;color:var(--text-secondary);margin-top:48px}footer a{color:var(--purple);text-decoration:none}
+  </style>
+</head>
+<body>
+  <nav><a href="../index.html" class="nav-logo">Z ZenithCraft</a><ul class="nav-links"><li><a href="../tools.html">All Tools</a></li><li><a href="../blogs.html">Blog</a></li><li><a href="../faqs.html">FAQs</a></li></ul></nav>
+  <div class="breadcrumb"><a href="../index.html">Home</a><span>›</span><a href="../tools.html">Tools</a><span>›</span>Age Calculator</div>
+  <div class="hero">
+    <div class="tool-badge">Calculator</div>
+    <h1>Free Age Calculator — Exact Years, Months &amp; Days</h1>
+    <p class="hero-desc">Find your exact age, total days lived, and next birthday countdown instantly. Free, no signup, works for any country worldwide.</p>
+    <div class="trust-badges"><span class="badge">✓ Exact Age</span><span class="badge">✓ Birthday Countdown</span><span class="badge">✓ No Signup</span><span class="badge">✓ Free Forever</span><span class="badge">✓ Works Worldwide</span></div>
+  </div>
+  <div class="tool-box">
+    <div class="input-group"><label for="dob">Your Date of Birth</label><input type="date" id="dob"></div>
+    <div class="input-group"><label for="calcDate">Calculate Age As Of (default: today)</label><input type="date" id="calcDate"></div>
+    <button class="btn" id="calcBtn">🎂 Calculate My Age</button>
+    <div class="result-grid" id="resultGrid">
+      <div class="result-card"><div class="result-num" id="resYears">—</div><div class="result-label">Years</div></div>
+      <div class="result-card"><div class="result-num" id="resMonths">—</div><div class="result-label">Months</div></div>
+      <div class="result-card"><div class="result-num" id="resDays">—</div><div class="result-label">Days</div></div>
+      <div class="result-card"><div class="result-num" id="resTotalDays">—</div><div class="result-label">Total Days Lived</div></div>
+    </div>
+    <div class="birthday-box" id="birthdayBox"></div>
+  </div>
+  <div class="section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item"><div class="faq-q">How do I calculate my exact age in years, months and days?</div><div class="faq-a">Enter your date of birth and click Calculate. You instantly see your exact age in years, months, days and total days lived, plus a countdown to your next birthday.</div></div>
+      <div class="faq-item"><div class="faq-q">How many days old am I?</div><div class="faq-a">ZenithCraft's Age Calculator shows your exact total days lived alongside your age in years and months. Enter your birth date and get the answer instantly, free.</div></div>
+      <div class="faq-item"><div class="faq-q">Can I use this for UK retirement or pension planning?</div><div class="faq-a">Yes. UK users use this calculator for retirement planning, pension age checks and official form requirements. Enter any date — works for any country.</div></div>
+      <div class="faq-item"><div class="faq-q">Does this work for Saudi Arabia iqama or UAE visa age checks?</div><div class="faq-a">Yes. Enter any birth date to get your exact current age — useful for iqama renewals, UAE visa applications and other official documents requiring precise age.</div></div>
+      <div class="faq-item"><div class="faq-q">Is the age calculator free with no signup?</div><div class="faq-a">Yes. Completely free, no account, no signup, no limit. Works in any browser worldwide — UK, USA, Australia, Canada, UAE and beyond.</div></div>
+    </div>
+  </div>
+  <div class="section">
+    <h2>Related Tools</h2>
+    <div class="related-grid">
+      <a href="unit-converter.html" class="related-card"><div class="related-icon">📏</div><div class="related-title">Unit Converter</div><div class="related-desc">Convert length, weight, temperature free.</div></a>
+      <a href="percentage-calculator.html" class="related-card"><div class="related-icon">📊</div><div class="related-title">Percentage Calculator</div><div class="related-desc">Calculate exam marks and discounts free.</div></a>
+      <a href="image-compressor.html" class="related-card"><div class="related-icon">📉</div><div class="related-title">Image Compressor</div><div class="related-desc">Compress images free, no upload required.</div></a>
+      <a href="qr-generator.html" class="related-card"><div class="related-icon">📱</div><div class="related-title">QR Generator</div><div class="related-desc">Create free QR codes, no watermark.</div></a>
+    </div>
+  </div>
+  <footer><p><a href="../index.html">ZenithCraft</a> · <a href="../tools.html">All Tools</a> · <a href="../blogs.html">Blog</a> · <a href="../faqs.html">FAQs</a></p><p style="margin-top:8px">Free tools serving users worldwide — UK, USA, Australia, Canada, UAE and beyond.<br>© 2026 ZenithCraft Studio. Zero uploads. Zero data stored.</p></footer>
+  <script>
+    const today=new Date();
+    document.getElementById('calcDate').valueAsDate=today;
+    document.getElementById('calcBtn').addEventListener('click',()=>{
+      const dob=new Date(document.getElementById('dob').value);
+      const to=new Date(document.getElementById('calcDate').value);
+      if(!document.getElementById('dob').value){alert('Please enter your date of birth.');return;}
+      let y=to.getFullYear()-dob.getFullYear();
+      let m=to.getMonth()-dob.getMonth();
+      let d=to.getDate()-dob.getDate();
+      if(d<0){m--;const prev=new Date(to.getFullYear(),to.getMonth(),0);d+=prev.getDate();}
+      if(m<0){y--;m+=12;}
+      const totalDays=Math.floor((to-dob)/(1000*60*60*24));
+      document.getElementById('resYears').textContent=y;
+      document.getElementById('resMonths').textContent=m;
+      document.getElementById('resDays').textContent=d;
+      document.getElementById('resTotalDays').textContent=totalDays.toLocaleString();
+      document.getElementById('resultGrid').classList.add('active');
+      const nextBday=new Date(to.getFullYear(),dob.getMonth(),dob.getDate());
+      if(nextBday<=to)nextBday.setFullYear(to.getFullYear()+1);
+      const daysLeft=Math.ceil((nextBday-to)/(1000*60*60*24));
+      const box=document.getElementById('birthdayBox');
+      box.textContent=daysLeft===0?'🎉 Happy Birthday! Today is your birthday!':'🎂 Your next birthday is in '+daysLeft+' days!';
+      box.classList.add('active');
+    });
+    document.querySelectorAll('.faq-q').forEach(q=>{q.addEventListener('click',()=>{const item=q.parentElement;const isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));if(!isOpen)item.classList.add('open');});});
+  </script>
+</body>
+</html>
