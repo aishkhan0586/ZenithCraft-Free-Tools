@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Free Percentage Calculator – Calculate %, Increase, Decrease | ZenithCraft</title>
+<meta name="description" content="Calculate percentages, percentage change, what percent of a number is, and add/subtract percentages. Free instant calculator. No sign-up."/>
+<meta name="keywords" content="percentage calculator, percent calculator, calculate percentage, percentage increase, percentage decrease, what percent"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://aishkhan0586.github.io/ZenithCraft-Free-Tools/tools/percentage-calculator.html"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Percentage Calculator","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free percentage calculator with 4 modes: basic %, what % is X of Y, % change, and add/subtract %.","url":"https://aishkhan0586.github.io/ZenithCraft-Free-Tools/tools/percentage-calculator.html"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#0a0a0f;--bg2:#111118;--bg3:#1a1a24;--border:rgba(255,255,255,0.08);--border-hover:rgba(255,255,255,0.18);--text:#f0f0f8;--text2:#9090a8;--text3:#5a5a70;--accent2:#a855f7;--accent4:#10b981;--grad:linear-gradient(135deg,#7c3aed,#a855f7,#06b6d4);--radius:16px;--radius2:12px;--transition:0.25s cubic-bezier(0.4,0,0.2,1)}
+[data-theme="light"]{--bg:#f8f8ff;--bg2:#fff;--bg3:#f0f0f8;--border:rgba(0,0,0,0.08);--border-hover:rgba(0,0,0,0.18);--text:#0a0a1a;--text2:#4a4a6a;--text3:#9090b0}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;transition:background var(--transition),color var(--transition)}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;border:none;background:none;font-family:inherit}
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,10,15,0.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+[data-theme="light"] .nav{background:rgba(248,248,255,0.85)}
+.nav-inner{max-width:1280px;margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav-logo{display:flex;align-items:center;gap:10px;font-size:1.2rem;font-weight:800;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.nav-logo span{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:10px;background:var(--grad);font-size:1rem;font-weight:900;color:#fff;-webkit-text-fill-color:#fff}
+.nav-right{display:flex;align-items:center;gap:10px}
+.theme-btn{width:40px;height:40px;border-radius:10px;background:var(--bg3);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:var(--text2);transition:all var(--transition)}
+.nav-back{padding:9px 18px;border-radius:10px;background:var(--bg3);border:1px solid var(--border);font-size:0.875rem;font-weight:600;color:var(--text);transition:all var(--transition)}
+.nav-back:hover{border-color:var(--border-hover)}
+.tool-hero{padding:120px 24px 40px;text-align:center;position:relative}
+.tool-hero::before{content:"";position:absolute;top:-150px;left:50%;transform:translateX(-50%);width:500px;height:500px;border-radius:50%;background:radial-gradient(ellipse,rgba(124,58,237,0.1) 0%,transparent 70%);pointer-events:none}
+.tool-badge{display:inline-flex;align-items:center;gap:8px;padding:7px 16px;border-radius:50px;background:rgba(124,58,237,0.12);border:1px solid rgba(124,58,237,0.3);font-size:0.78rem;font-weight:700;color:var(--accent2);margin-bottom:20px;text-transform:uppercase;letter-spacing:0.04em}
+.tool-hero h1{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;line-height:1.15;letter-spacing:-0.02em;margin-bottom:14px}
+.grad-text{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.tool-hero p{font-size:0.975rem;color:var(--text2);max-width:540px;margin:0 auto}
+.tool-wrap{padding:0 24px 80px}
+.footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 24px}
+.footer-bottom{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-bottom p{font-size:0.8rem;color:var(--text3)}
+.footer-links{display:flex;gap:20px}
+.footer-links a{font-size:0.8rem;color:var(--text3);transition:color var(--transition)}
+.footer-links a:hover{color:var(--text)}
+@media(max-width:768px){.nav-back{display:none}}
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-26HYXT72FK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-26HYXT72FK');
+</script>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><span>Z</span>ZenithCraft</a>
+    <div class="nav-right">
+      <button class="theme-btn" id="themeBtn">🌙</button>
+      <a href="../index.html#all-tools" class="nav-back">← All Tools</a>
+    </div>
+  </div>
+</nav>
+<section class="tool-hero">
+  <div style="max-width:680px;margin:0 auto;position:relative;z-index:1">
+    <div class="tool-badge">📊 Calculator</div>
+    <h1>Free <span class='grad-text'>Percentage Calculator</span></h1>
+    <p>Four percentage calculation modes in one tool. Calculate discounts, exam scores, price changes and more.</p>
+  </div>
+</section>
+
+<div class="tool-wrap"><div class="tool-inner" style="max-width:720px;margin:0 auto">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px">
+  <div style="background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:24px">
+    <div style="font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text3);margin-bottom:16px">① What is X% of Y?</div>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap">
+      <input id="p1a" type="number" placeholder="X %" style="flex:1;min-width:80px;padding:11px 14px;border-radius:9px;background:var(--bg3);border:1px solid var(--border);color:var(--text);font-size:0.95rem;font-family:Inter;outline:none"/>
+      <span style="color:var(--text3);font-size:0.9rem">% of</span>
+      <input id="p1b" type="number" placeholder="Y" style="flex:1;min-width:80px;padding:11px 14px;border-radius:9px;background:var(--bg3);border:1px solid var(--border);color:var(--text);font-size:0.95rem;font-family:Inter;outline:none"/>
+    </div>
+    <div id="r1" style="font-size:1.5rem;font-weight:800;background:linear-gradient(135deg,#7c3aed,#a855f7,#06b6d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;min-height:36px"></div>
+  </div>
+  <div style="background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:24px">
+    <div style="font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text3);margin-bottom:16px">② X is what % of Y?</div>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap">
+      <input id="p2a" type="number" placeholder="X" style="flex:1;min-width:80px;padding:11px 14px;border-radius:9px;background:var(--bg3);border:1px solid var(--border);color:var(--text);font-size:0.95rem;font-family:Inter;outline:none"/>
+      <span style="color:var(--text3);font-size:0.9rem">is what % of</span>
+      <input id="p2b" type="number" placeholder="Y" style="flex:1;min-width:80px;padding:11px 14px;border-radius:9px;background:var(--bg3);border:1px solid var(--border);color:var(--text);font-size:0.95rem;font-family:Inter;outline:none"/>
+    </div>
+    <div id="r2" style="font-size:1.5rem;font-weight:800;background:linear-gradient(135deg,#7c3aed,#a855f7,#06b6d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;min-height:36px"></div>
+  </div>
+  <div style="background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:24px">
+    <div style="font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text3);margin-bottom:16px">③ % Change from X to Y</div>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap">
+      <input id="p3a" type="number" placeholder="From" style="flex:1;min-width:80px;padding:11px 14px;border-radius:9px;background:var(--bg3);border:1px solid var(--border);color:var(--text);font-size:0.95rem;font-family:Inter;outline:none"/>
+      <span style="color:var(--text3);font-size:0.9rem">→</span>
+      <input id="p3b" type="number" placeholder="To" style="flex:1;min-width:80px;padding:11px 14px;border-radius:9px;background:var(--bg3);border:1px solid var(--border);color:var(--text);font-size:0.95rem;font-family:Inter;outline:none"/>
+    </div>
+    <div id="r3" style="font-size:1.5rem;font-weight:800;min-height:36px"></div>
+  </div>
+  <div style="background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:24px">
+    <div style="font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text3);margin-bottom:16px">④ Add / Subtract % from X</div>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap">
+      <input id="p4a" type="number" placeholder="X" style="flex:1;min-width:80px;padding:11px 14px;border-radius:9px;background:var(--bg3);border:1px solid var(--border);color:var(--text);font-size:0.95rem;font-family:Inter;outline:none"/>
+      <select id="p4op" style="padding:11px;border-radius:9px;background:var(--bg3);border:1px solid var(--border);color:var(--text);font-size:0.9rem;font-family:Inter;outline:none"><option value="+">+</option><option value="-">−</option></select>
+      <input id="p4b" type="number" placeholder="%" style="flex:1;min-width:80px;padding:11px 14px;border-radius:9px;background:var(--bg3);border:1px solid var(--border);color:var(--text);font-size:0.95rem;font-family:Inter;outline:none"/>
+    </div>
+    <div id="r4" style="font-size:1.5rem;font-weight:800;background:linear-gradient(135deg,#7c3aed,#a855f7,#06b6d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;min-height:36px"></div>
+  </div>
+</div>
+</div></div>
+<script>
+function f(n,d=2){return isNaN(n)||!isFinite(n)?'':parseFloat(n.toFixed(d)).toLocaleString();}
+['p1a','p1b'].forEach(id=>document.getElementById(id).addEventListener('input',()=>{const a=parseFloat(document.getElementById('p1a').value),b=parseFloat(document.getElementById('p1b').value);if(!isNaN(a)&&!isNaN(b))document.getElementById('r1').textContent=f(a/100*b);}));
+['p2a','p2b'].forEach(id=>document.getElementById(id).addEventListener('input',()=>{const a=parseFloat(document.getElementById('p2a').value),b=parseFloat(document.getElementById('p2b').value);if(!isNaN(a)&&!isNaN(b)&&b!==0)document.getElementById('r2').textContent=f(a/b*100)+'%';}));
+['p3a','p3b'].forEach(id=>document.getElementById(id).addEventListener('input',()=>{const a=parseFloat(document.getElementById('p3a').value),b=parseFloat(document.getElementById('p3b').value);if(!isNaN(a)&&!isNaN(b)&&a!==0){const ch=(b-a)/Math.abs(a)*100;const r=document.getElementById('r3');r.textContent=(ch>=0?'▲ +':' ▼ ')+f(ch)+'%';r.style.color=ch>=0?'#10b981':'#ef4444';}}));
+['p4a','p4b','p4op'].forEach(id=>document.getElementById(id).addEventListener(id==='p4op'?'change':'input',()=>{const a=parseFloat(document.getElementById('p4a').value),b=parseFloat(document.getElementById('p4b').value),op=document.getElementById('p4op').value;if(!isNaN(a)&&!isNaN(b))document.getElementById('r4').textContent=f(op==='+'?a*(1+b/100):a*(1-b/100));}));
+</script>
+<footer class="footer">
+  <div class="footer-bottom">
+    <p>© 2026 ZenithCraft Studio · <a href="../index.html" style="color:var(--accent2)">All 28 Free Tools</a></p>
+    <div class="footer-links"><a href="../index.html">Home</a><a href="../blogs.html">Blog</a><a href="../faqs.html">FAQs</a></div>
+  </div>
+</footer>
+<script>
+const themeBtn=document.getElementById('themeBtn');
+const html=document.documentElement;
+const sv=localStorage.getItem('zc-theme')||'dark';
+if(sv==='light'){html.setAttribute('data-theme','light');themeBtn.textContent='☀️';}
+themeBtn.addEventListener('click',()=>{const l=html.getAttribute('data-theme')==='light';html.setAttribute('data-theme',l?'dark':'light');themeBtn.textContent=l?'🌙':'☀️';localStorage.setItem('zc-theme',l?'dark':'light');});
+</script>
+</body>
+</html>

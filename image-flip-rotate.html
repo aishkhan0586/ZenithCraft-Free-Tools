@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Free Image Flip & Rotate Tool – Flip Horizontal Vertical | ZenithCraft</title>
+<meta name="description" content="Flip images horizontally or vertically. Rotate by 90, 180, 270 or any custom degree. Free, instant, no uploads."/>
+<meta name="keywords" content="image flip, rotate image, flip horizontal, flip vertical, rotate photo online"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://aishkhan0586.github.io/ZenithCraft-Free-Tools/tools/image-flip-rotate.html"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Image Flip & Rotate","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Flip images horizontally or vertically. Rotate by 90, 180, 270 or any custom degree. Free, instant, ","url":"https://aishkhan0586.github.io/ZenithCraft-Free-Tools/tools/image-flip-rotate.html"}<\/script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#0a0a0f;--bg2:#111118;--bg3:#1a1a24;--border:rgba(255,255,255,0.08);--border-hover:rgba(255,255,255,0.18);--text:#f0f0f8;--text2:#9090a8;--text3:#5a5a70;--accent2:#a855f7;--accent4:#10b981;--grad:linear-gradient(135deg,#7c3aed,#a855f7,#06b6d4);--radius:16px;--radius2:12px;--transition:0.25s cubic-bezier(0.4,0,0.2,1)}
+[data-theme="light"]{--bg:#f8f8ff;--bg2:#fff;--bg3:#f0f0f8;--border:rgba(0,0,0,0.08);--border-hover:rgba(0,0,0,0.18);--text:#0a0a1a;--text2:#4a4a6a;--text3:#9090b0}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;transition:background var(--transition),color var(--transition)}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;border:none;background:none;font-family:inherit}
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,10,15,0.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+[data-theme="light"] .nav{background:rgba(248,248,255,0.85)}
+.nav-inner{max-width:1280px;margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav-logo{display:flex;align-items:center;gap:10px;font-size:1.2rem;font-weight:800;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.nav-logo span{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:10px;background:var(--grad);font-size:1rem;font-weight:900;color:#fff;-webkit-text-fill-color:#fff}
+.nav-right{display:flex;align-items:center;gap:10px}
+.theme-btn{width:40px;height:40px;border-radius:10px;background:var(--bg3);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:var(--text2);transition:all var(--transition)}
+.nav-back{padding:9px 18px;border-radius:10px;background:var(--bg3);border:1px solid var(--border);font-size:0.875rem;font-weight:600;color:var(--text);transition:all var(--transition)}
+.nav-back:hover{border-color:var(--border-hover)}
+.tool-hero{padding:120px 24px 40px;text-align:center;position:relative}
+.tool-hero::before{content:"";position:absolute;top:-150px;left:50%;transform:translateX(-50%);width:500px;height:500px;border-radius:50%;background:radial-gradient(ellipse,rgba(124,58,237,0.1) 0%,transparent 70%);pointer-events:none}
+.tool-badge{display:inline-flex;align-items:center;gap:8px;padding:7px 16px;border-radius:50px;background:rgba(124,58,237,0.12);border:1px solid rgba(124,58,237,0.3);font-size:0.78rem;font-weight:700;color:var(--accent2);margin-bottom:20px;text-transform:uppercase;letter-spacing:.04em}
+.tool-hero h1{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;line-height:1.15;letter-spacing:-.02em;margin-bottom:14px}
+.grad-text{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.tool-hero p{font-size:.975rem;color:var(--text2);max-width:540px;margin:0 auto}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:28px;margin-bottom:16px}
+.footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 24px}
+.footer-bottom{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-bottom p{font-size:.8rem;color:var(--text3)}
+.footer-links{display:flex;gap:20px}
+.footer-links a{font-size:.8rem;color:var(--text3);transition:color var(--transition)}
+.footer-links a:hover{color:var(--text)}
+@media(max-width:768px){.nav-back{display:none}}
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-26HYXT72FK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-26HYXT72FK');
+</script>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><span>Z</span>ZenithCraft</a>
+    <div class="nav-right">
+      <button class="theme-btn" id="themeBtn">🌙</button>
+      <a href="../index.html#all-tools" class="nav-back">← All Tools</a>
+    </div>
+  </div>
+</nav>
+<section class="tool-hero">
+  <div style="max-width:680px;margin:0 auto;position:relative;z-index:1">
+    <div class="tool-badge">🔁 Image Tool</div>
+    <h1>Free <span class='grad-text'>Image Flip & Rotate</span></h1>
+    <p>Flip images horizontally or vertically. Rotate by 90°, 180°, 270° or any custom angle.</p>
+  </div>
+</section>
+<div class="tool-wrap"><div class="tool-inner">
+<div class="card">
+  <div style="border:2px dashed var(--border);border-radius:12px;padding:48px 24px;text-align:center;cursor:pointer;position:relative" id="dz">
+    <div style="font-size:2.5rem;margin-bottom:12px">🔁</div>
+    <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:8px">Drop image or click to browse</h3>
+    <input type="file" id="fi" accept="image/*" style="position:absolute;inset:0;opacity:0;cursor:pointer"/>
+  </div>
+</div>
+<div id="sp" style="display:none" class="card">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px">
+    <div><p style="font-size:.75rem;font-weight:700;text-transform:uppercase;color:var(--text3);margin-bottom:8px">Preview</p><canvas id="cv" style="max-width:100%;border-radius:8px;display:block"></canvas></div>
+    <div>
+      <p style="font-size:.75rem;font-weight:700;text-transform:uppercase;color:var(--text3);margin-bottom:12px">Transform</p>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <button onclick="flipH()" style="padding:11px;border-radius:9px;background:var(--bg3);border:1px solid var(--border);color:var(--text);font-size:.875rem;font-weight:600;cursor:pointer">↔️ Flip Horizontal</button>
+        <button onclick="flipV()" style="padding:11px;border-radius:9px;background:var(--bg3);border:1px solid var(--border);color:var(--text);font-size:.875rem;font-weight:600;cursor:pointer">↕️ Flip Vertical</button>
+        <button onclick="rot(90)" style="padding:11px;border-radius:9px;background:var(--bg3);border:1px solid var(--border);color:var(--text);font-size:.875rem;font-weight:600;cursor:pointer">↩️ Rotate 90°</button>
+        <button onclick="rot(180)" style="padding:11px;border-radius:9px;background:var(--bg3);border:1px solid var(--border);color:var(--text);font-size:.875rem;font-weight:600;cursor:pointer">🔃 Rotate 180°</button>
+        <button onclick="rot(270)" style="padding:11px;border-radius:9px;background:var(--bg3);border:1px solid var(--border);color:var(--text);font-size:.875rem;font-weight:600;cursor:pointer">↪️ Rotate 270°</button>
+        <div style="display:flex;gap:8px;align-items:center">
+          <input type="number" id="customAngle" placeholder="Custom °" style="flex:1;padding:9px 12px;border-radius:8px;background:var(--bg3);border:1px solid var(--border);color:var(--text);font-family:Inter;outline:none"/>
+          <button onclick="rot(parseInt(document.getElementById('customAngle').value)||0)" style="padding:9px 14px;border-radius:8px;background:var(--grad);color:#fff;font-size:.825rem;font-weight:700;border:none;cursor:pointer">Go</button>
+        </div>
+        <button onclick="download()" style="padding:12px;border-radius:9px;background:#10b981;color:#fff;font-size:.875rem;font-weight:700;border:none;cursor:pointer">⬇️ Download</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div></div>
+<script>
+let img=null,state={flipX:false,flipY:false,angle:0};
+document.getElementById('fi').addEventListener('change',e=>{if(e.target.files[0])load(e.target.files[0])});
+function load(f){img=new Image();img.onload=()=>{document.getElementById('sp').style.display='block';draw()};img.src=URL.createObjectURL(f);}
+function draw(){
+  const cv=document.getElementById('cv');
+  const r=state.angle*(Math.PI/180);
+  const aw=Math.abs(img.width*Math.cos(r))+Math.abs(img.height*Math.sin(r));
+  const ah=Math.abs(img.width*Math.sin(r))+Math.abs(img.height*Math.cos(r));
+  cv.width=aw;cv.height=ah;
+  const ctx=cv.getContext('2d');
+  ctx.translate(aw/2,ah/2);ctx.rotate(r);
+  ctx.scale(state.flipX?-1:1,state.flipY?-1:1);
+  ctx.drawImage(img,-img.width/2,-img.height/2);
+}
+function flipH(){state.flipX=!state.flipX;draw();}
+function flipV(){state.flipY=!state.flipY;draw();}
+function rot(deg){state.angle=(state.angle+deg)%360;draw();}
+function download(){document.getElementById('cv').toBlob(b=>{const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='transformed.png';a.click()},'image/png');}
+</script>
+<footer class="footer">
+  <div class="footer-bottom">
+    <p>© 2026 ZenithCraft Studio · <a href="../index.html" style="color:var(--accent2)">All 28 Free Tools</a></p>
+    <div class="footer-links"><a href="../index.html">Home</a><a href="../blogs.html">Blog</a><a href="../faqs.html">FAQs</a></div>
+  </div>
+</footer>
+<script>
+const themeBtn=document.getElementById("themeBtn");
+const html=document.documentElement;
+const sv=localStorage.getItem("zc-theme")||"dark";
+if(sv==="light"){html.setAttribute("data-theme","light");themeBtn.textContent="☀️";}
+themeBtn.addEventListener("click",()=>{const l=html.getAttribute("data-theme")==="light";html.setAttribute("data-theme",l?"dark":"light");themeBtn.textContent=l?"🌙":"☀️";localStorage.setItem("zc-theme",l?"dark":"light");});
+<\/script>
+</body>
+</html>

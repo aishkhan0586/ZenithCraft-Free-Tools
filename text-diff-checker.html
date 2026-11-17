@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Free Text Diff Checker – Compare Two Texts Side by Side | ZenithCraft</title>
+<meta name="description" content="Compare two versions of text and see all additions, deletions and changes highlighted. Free online diff tool."/>
+<meta name="keywords" content="text diff, compare text, text comparison, diff checker, text difference, find changes"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://aishkhan0586.github.io/ZenithCraft-Free-Tools/tools/text-diff-checker.html"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Text Diff Checker","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Compare two versions of text and see all additions, deletions and changes highlighted. Free online d","url":"https://aishkhan0586.github.io/ZenithCraft-Free-Tools/tools/text-diff-checker.html"}<\/script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#0a0a0f;--bg2:#111118;--bg3:#1a1a24;--border:rgba(255,255,255,0.08);--border-hover:rgba(255,255,255,0.18);--text:#f0f0f8;--text2:#9090a8;--text3:#5a5a70;--accent2:#a855f7;--accent4:#10b981;--grad:linear-gradient(135deg,#7c3aed,#a855f7,#06b6d4);--radius:16px;--radius2:12px;--transition:0.25s cubic-bezier(0.4,0,0.2,1)}
+[data-theme="light"]{--bg:#f8f8ff;--bg2:#fff;--bg3:#f0f0f8;--border:rgba(0,0,0,0.08);--border-hover:rgba(0,0,0,0.18);--text:#0a0a1a;--text2:#4a4a6a;--text3:#9090b0}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;transition:background var(--transition),color var(--transition)}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;border:none;background:none;font-family:inherit}
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,10,15,0.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+[data-theme="light"] .nav{background:rgba(248,248,255,0.85)}
+.nav-inner{max-width:1280px;margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav-logo{display:flex;align-items:center;gap:10px;font-size:1.2rem;font-weight:800;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.nav-logo span{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:10px;background:var(--grad);font-size:1rem;font-weight:900;color:#fff;-webkit-text-fill-color:#fff}
+.nav-right{display:flex;align-items:center;gap:10px}
+.theme-btn{width:40px;height:40px;border-radius:10px;background:var(--bg3);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:var(--text2);transition:all var(--transition)}
+.nav-back{padding:9px 18px;border-radius:10px;background:var(--bg3);border:1px solid var(--border);font-size:0.875rem;font-weight:600;color:var(--text);transition:all var(--transition)}
+.nav-back:hover{border-color:var(--border-hover)}
+.tool-hero{padding:120px 24px 40px;text-align:center;position:relative}
+.tool-hero::before{content:"";position:absolute;top:-150px;left:50%;transform:translateX(-50%);width:500px;height:500px;border-radius:50%;background:radial-gradient(ellipse,rgba(124,58,237,0.1) 0%,transparent 70%);pointer-events:none}
+.tool-badge{display:inline-flex;align-items:center;gap:8px;padding:7px 16px;border-radius:50px;background:rgba(124,58,237,0.12);border:1px solid rgba(124,58,237,0.3);font-size:0.78rem;font-weight:700;color:var(--accent2);margin-bottom:20px;text-transform:uppercase;letter-spacing:.04em}
+.tool-hero h1{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;line-height:1.15;letter-spacing:-.02em;margin-bottom:14px}
+.grad-text{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.tool-hero p{font-size:.975rem;color:var(--text2);max-width:540px;margin:0 auto}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:28px;margin-bottom:16px}
+.footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 24px}
+.footer-bottom{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-bottom p{font-size:.8rem;color:var(--text3)}
+.footer-links{display:flex;gap:20px}
+.footer-links a{font-size:.8rem;color:var(--text3);transition:color var(--transition)}
+.footer-links a:hover{color:var(--text)}
+@media(max-width:768px){.nav-back{display:none}}
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-26HYXT72FK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-26HYXT72FK');
+</script>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><span>Z</span>ZenithCraft</a>
+    <div class="nav-right">
+      <button class="theme-btn" id="themeBtn">🌙</button>
+      <a href="../index.html#all-tools" class="nav-back">← All Tools</a>
+    </div>
+  </div>
+</nav>
+<section class="tool-hero">
+  <div style="max-width:680px;margin:0 auto;position:relative;z-index:1">
+    <div class="tool-badge">🔍 Text Tool</div>
+    <h1>Free <span class='grad-text'>Text Diff Checker</span></h1>
+    <p>Compare two texts side by side and highlight every addition, deletion and change.</p>
+  </div>
+</section>
+<div class="tool-wrap"><div class="tool-inner">
+<div class="card">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+    <div>
+      <label style="font-size:.85rem;font-weight:600;color:var(--text2);display:block;margin-bottom:8px">Original Text</label>
+      <textarea id="t1" placeholder="Paste original version…" style="width:100%;height:200px;padding:14px;background:var(--bg3);border:1px solid var(--border);border-radius:11px;color:var(--text);font-family:Inter;font-size:.875rem;line-height:1.6;resize:vertical;outline:none;transition:border-color .25s"></textarea>
+    </div>
+    <div>
+      <label style="font-size:.85rem;font-weight:600;color:var(--text2);display:block;margin-bottom:8px">Modified Text</label>
+      <textarea id="t2" placeholder="Paste modified version…" style="width:100%;height:200px;padding:14px;background:var(--bg3);border:1px solid var(--border);border-radius:11px;color:var(--text);font-family:Inter;font-size:.875rem;line-height:1.6;resize:vertical;outline:none;transition:border-color .25s"></textarea>
+    </div>
+  </div>
+  <div style="display:flex;gap:10px;flex-wrap:wrap">
+    <button onclick="diff()" style="flex:1;padding:13px;border-radius:10px;background:var(--grad);font-size:.95rem;font-weight:700;color:#fff;border:none;cursor:pointer">🔍 Compare Texts</button>
+    <button onclick="document.getElementById('t1').value='';document.getElementById('t2').value='';document.getElementById('res').style.display='none'" style="padding:13px 20px;border-radius:10px;background:var(--bg3);border:1px solid var(--border);color:var(--text);font-size:.875rem;font-weight:600;cursor:pointer">Clear</button>
+  </div>
+</div>
+<div id="res" style="display:none" class="card">
+  <div style="display:flex;gap:20px;margin-bottom:14px;flex-wrap:wrap">
+    <span id="addedCount" style="font-size:.85rem;font-weight:600;color:#10b981"></span>
+    <span id="removedCount" style="font-size:.85rem;font-weight:600;color:#ef4444"></span>
+    <span id="unchangedCount" style="font-size:.85rem;font-weight:600;color:var(--text3)"></span>
+  </div>
+  <div id="diffOutput" style="font-size:.875rem;line-height:2;font-family:monospace;white-space:pre-wrap;word-break:break-word"></div>
+</div>
+</div></div>
+<script>
+function diff(){
+  const a=document.getElementById('t1').value;const b=document.getElementById('t2').value;
+  if(!a&&!b){alert('Please paste text in both fields.');return;}
+  const wa=a.split(/\s+/);const wb=b.split(/\s+/);
+  const lcs=buildLCS(wa,wb);
+  let html='';let added=0,removed=0,unchanged=0;
+  let i=0,j=0,k=0;
+  while(i<wa.length||j<wb.length){
+    if(i<wa.length&&j<wb.length&&k<lcs.length&&wa[i]===lcs[k]&&wb[j]===lcs[k]){html+=wa[i]+' ';i++;j++;k++;unchanged++;}
+    else if(j<wb.length&&(k>=lcs.length||wb[j]!==lcs[k])){html+=`<mark style="background:rgba(16,185,129,.25);border-radius:3px;padding:1px 3px">${wb[j]}</mark> `;j++;added++;}
+    else if(i<wa.length){html+=`<del style="background:rgba(239,68,68,.2);border-radius:3px;padding:1px 3px;text-decoration:line-through;color:#ef4444">${wa[i]}</del> `;i++;removed++;}
+    else break;
+  }
+  document.getElementById('addedCount').textContent='+ '+added+' added';
+  document.getElementById('removedCount').textContent='− '+removed+' removed';
+  document.getElementById('unchangedCount').textContent='= '+unchanged+' unchanged';
+  document.getElementById('diffOutput').innerHTML=html;
+  document.getElementById('res').style.display='block';
+}
+function buildLCS(a,b){const m=a.length,n=b.length;const dp=Array.from({length:m+1},()=>new Array(n+1).fill(0));for(let i=1;i<=m;i++)for(let j=1;j<=n;j++){if(a[i-1]===b[j-1])dp[i][j]=dp[i-1][j-1]+1;else dp[i][j]=Math.max(dp[i-1][j],dp[i][j-1]);}const res=[];let i=m,j=n;while(i>0&&j>0){if(a[i-1]===b[j-1]){res.unshift(a[i-1]);i--;j--;}else if(dp[i-1][j]>dp[i][j-1])i--;else j--;}return res;}
+</script>
+<footer class="footer">
+  <div class="footer-bottom">
+    <p>© 2026 ZenithCraft Studio · <a href="../index.html" style="color:var(--accent2)">All 28 Free Tools</a></p>
+    <div class="footer-links"><a href="../index.html">Home</a><a href="../blogs.html">Blog</a><a href="../faqs.html">FAQs</a></div>
+  </div>
+</footer>
+<script>
+const themeBtn=document.getElementById("themeBtn");
+const html=document.documentElement;
+const sv=localStorage.getItem("zc-theme")||"dark";
+if(sv==="light"){html.setAttribute("data-theme","light");themeBtn.textContent="☀️";}
+themeBtn.addEventListener("click",()=>{const l=html.getAttribute("data-theme")==="light";html.setAttribute("data-theme",l?"dark":"light");themeBtn.textContent=l?"🌙":"☀️";localStorage.setItem("zc-theme",l?"dark":"light");});
+<\/script>
+</body>
+</html>

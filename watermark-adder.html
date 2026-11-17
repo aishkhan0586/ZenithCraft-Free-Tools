@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Free Watermark Adder – Add Text Watermark to Photos | ZenithCraft</title>
+<meta name="description" content="Add custom text watermarks to protect photos and designs. Control position, size, opacity. Free browser tool."/>
+<meta name="keywords" content="watermark adder, add watermark, text watermark, photo watermark, watermark image"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://aishkhan0586.github.io/ZenithCraft-Free-Tools/tools/watermark-adder.html"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Watermark Adder","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Add custom text watermarks to protect photos and designs. Control position, size, opacity. Free brow","url":"https://aishkhan0586.github.io/ZenithCraft-Free-Tools/tools/watermark-adder.html"}<\/script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#0a0a0f;--bg2:#111118;--bg3:#1a1a24;--border:rgba(255,255,255,0.08);--border-hover:rgba(255,255,255,0.18);--text:#f0f0f8;--text2:#9090a8;--text3:#5a5a70;--accent2:#a855f7;--accent4:#10b981;--grad:linear-gradient(135deg,#7c3aed,#a855f7,#06b6d4);--radius:16px;--radius2:12px;--transition:0.25s cubic-bezier(0.4,0,0.2,1)}
+[data-theme="light"]{--bg:#f8f8ff;--bg2:#fff;--bg3:#f0f0f8;--border:rgba(0,0,0,0.08);--border-hover:rgba(0,0,0,0.18);--text:#0a0a1a;--text2:#4a4a6a;--text3:#9090b0}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;transition:background var(--transition),color var(--transition)}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;border:none;background:none;font-family:inherit}
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,10,15,0.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+[data-theme="light"] .nav{background:rgba(248,248,255,0.85)}
+.nav-inner{max-width:1280px;margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav-logo{display:flex;align-items:center;gap:10px;font-size:1.2rem;font-weight:800;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.nav-logo span{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:10px;background:var(--grad);font-size:1rem;font-weight:900;color:#fff;-webkit-text-fill-color:#fff}
+.nav-right{display:flex;align-items:center;gap:10px}
+.theme-btn{width:40px;height:40px;border-radius:10px;background:var(--bg3);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:var(--text2);transition:all var(--transition)}
+.nav-back{padding:9px 18px;border-radius:10px;background:var(--bg3);border:1px solid var(--border);font-size:0.875rem;font-weight:600;color:var(--text);transition:all var(--transition)}
+.nav-back:hover{border-color:var(--border-hover)}
+.tool-hero{padding:120px 24px 40px;text-align:center;position:relative}
+.tool-hero::before{content:"";position:absolute;top:-150px;left:50%;transform:translateX(-50%);width:500px;height:500px;border-radius:50%;background:radial-gradient(ellipse,rgba(124,58,237,0.1) 0%,transparent 70%);pointer-events:none}
+.tool-badge{display:inline-flex;align-items:center;gap:8px;padding:7px 16px;border-radius:50px;background:rgba(124,58,237,0.12);border:1px solid rgba(124,58,237,0.3);font-size:0.78rem;font-weight:700;color:var(--accent2);margin-bottom:20px;text-transform:uppercase;letter-spacing:.04em}
+.tool-hero h1{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;line-height:1.15;letter-spacing:-.02em;margin-bottom:14px}
+.grad-text{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.tool-hero p{font-size:.975rem;color:var(--text2);max-width:540px;margin:0 auto}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:28px;margin-bottom:16px}
+.footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 24px}
+.footer-bottom{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-bottom p{font-size:.8rem;color:var(--text3)}
+.footer-links{display:flex;gap:20px}
+.footer-links a{font-size:.8rem;color:var(--text3);transition:color var(--transition)}
+.footer-links a:hover{color:var(--text)}
+@media(max-width:768px){.nav-back{display:none}}
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-26HYXT72FK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-26HYXT72FK');
+</script>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><span>Z</span>ZenithCraft</a>
+    <div class="nav-right">
+      <button class="theme-btn" id="themeBtn">🌙</button>
+      <a href="../index.html#all-tools" class="nav-back">← All Tools</a>
+    </div>
+  </div>
+</nav>
+<section class="tool-hero">
+  <div style="max-width:680px;margin:0 auto;position:relative;z-index:1">
+    <div class="tool-badge">💧 Image Tool</div>
+    <h1>Free <span class='grad-text'>Watermark Adder</span></h1>
+    <p>Add custom text watermarks to your images. Control position, size, opacity and color.</p>
+  </div>
+</section>
+<div class="tool-wrap"><div class="tool-inner">
+<div class="card">
+  <div style="border:2px dashed var(--border);border-radius:12px;padding:48px 24px;text-align:center;cursor:pointer;position:relative" id="dz">
+    <div style="font-size:2.5rem;margin-bottom:12px">💧</div>
+    <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:8px">Drop image or click to browse</h3>
+    <input type="file" id="fi" accept="image/*" style="position:absolute;inset:0;opacity:0;cursor:pointer"/>
+  </div>
+</div>
+<div id="sp" style="display:none" class="card">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+    <div>
+      <p style="font-size:.75rem;font-weight:700;text-transform:uppercase;color:var(--text3);margin-bottom:8px">Settings</p>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div><label style="font-size:.82rem;color:var(--text2);display:block;margin-bottom:4px">Watermark Text</label><input type="text" id="wmText" value="© ZenithCraft" style="width:100%;padding:10px 12px;border-radius:9px;background:var(--bg3);border:1px solid var(--border);color:var(--text);font-family:Inter;outline:none"/></div>
+        <div style="display:flex;gap:10px">
+          <div style="flex:1"><label style="font-size:.82rem;color:var(--text2);display:block;margin-bottom:4px">Font size</label><input type="range" id="wmSize" min="10" max="120" value="40" style="width:100%;-webkit-appearance:none;height:4px;border-radius:4px;background:var(--bg3);outline:none"/></div>
+          <div style="flex:1"><label style="font-size:.82rem;color:var(--text2);display:block;margin-bottom:4px">Opacity</label><input type="range" id="wmOpacity" min="10" max="100" value="50" style="width:100%;-webkit-appearance:none;height:4px;border-radius:4px;background:var(--bg3);outline:none"/></div>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center">
+          <label style="font-size:.82rem;color:var(--text2)">Color:</label>
+          <input type="color" id="wmColor" value="#ffffff" style="width:40px;height:30px;border-radius:6px;border:1px solid var(--border);background:var(--bg3);cursor:pointer"/>
+        </div>
+        <div><label style="font-size:.82rem;color:var(--text2);display:block;margin-bottom:6px">Position</label>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px">
+            <button onclick="setPos('top-left',this)" style="padding:7px;border-radius:7px;background:var(--bg3);border:1px solid var(--border);color:var(--text2);font-size:.75rem;cursor:pointer">↖ TL</button>
+            <button onclick="setPos('top-center',this)" style="padding:7px;border-radius:7px;background:var(--bg3);border:1px solid var(--border);color:var(--text2);font-size:.75rem;cursor:pointer">↑ TC</button>
+            <button onclick="setPos('top-right',this)" style="padding:7px;border-radius:7px;background:var(--bg3);border:1px solid var(--border);color:var(--text2);font-size:.75rem;cursor:pointer">↗ TR</button>
+            <button onclick="setPos('center',this)" style="padding:7px;border-radius:7px;background:var(--bg3);border:1px solid var(--border);color:var(--text2);font-size:.75rem;cursor:pointer">⊙ C</button>
+            <button onclick="setPos('bottom-left',this)" style="padding:7px;border-radius:7px;background:var(--bg3);border:1px solid var(--border);color:var(--text2);font-size:.75rem;cursor:pointer">↙ BL</button>
+            <button onclick="setPos('bottom-right',this)" style="padding:7px;border-radius:7px;background:linear-gradient(135deg,#7c3aed,#a855f7,#06b6d4);border:none;color:#fff;font-size:.75rem;cursor:pointer">↘ BR</button>
+          </div>
+        </div>
+        <button onclick="applyWM()" style="width:100%;padding:13px;border-radius:10px;background:var(--grad);font-size:.95rem;font-weight:700;color:#fff;border:none;cursor:pointer">💧 Apply Watermark</button>
+      </div>
+    </div>
+    <div>
+      <p style="font-size:.75rem;font-weight:700;text-transform:uppercase;color:var(--text3);margin-bottom:8px">Preview</p>
+      <canvas id="cv" style="max-width:100%;border-radius:8px;display:block"></canvas>
+      <button id="dlb" style="display:none;width:100%;padding:11px;border-radius:9px;background:#10b981;font-size:.875rem;font-weight:700;color:#fff;border:none;cursor:pointer;margin-top:10px">⬇️ Download</button>
+    </div>
+  </div>
+</div>
+</div></div>
+<script>
+let img=null,pos='bottom-right';
+document.getElementById('fi').addEventListener('change',e=>{if(e.target.files[0])load(e.target.files[0])});
+function load(f){img=new Image();img.onload=()=>{document.getElementById('sp').style.display='block';applyWM()};img.src=URL.createObjectURL(f);}
+function setPos(p,btn){pos=p;document.querySelectorAll('#sp button').forEach(b=>{if(['↖ TL','↑ TC','↗ TR','⊙ C','↙ BL','↘ BR'].includes(b.textContent)){b.style.background='var(--bg3)';b.style.color='var(--text2)';b.style.border='1px solid var(--border)'}});btn.style.background='linear-gradient(135deg,#7c3aed,#a855f7,#06b6d4)';btn.style.color='#fff';btn.style.border='none';}
+function applyWM(){if(!img)return;const c=document.getElementById('cv');c.width=img.width;c.height=img.height;const ctx=c.getContext('2d');ctx.drawImage(img,0,0);const sz=parseInt(document.getElementById('wmSize').value);const op=parseInt(document.getElementById('wmOpacity').value)/100;const col=document.getElementById('wmColor').value;const txt=document.getElementById('wmText').value||'Watermark';ctx.font=`bold ${sz}px Inter,sans-serif`;ctx.fillStyle=col;ctx.globalAlpha=op;const pad=20;const tw=ctx.measureText(txt).width;let x,y;switch(pos){case'top-left':x=pad;y=sz+pad;break;case'top-center':x=(c.width-tw)/2;y=sz+pad;break;case'top-right':x=c.width-tw-pad;y=sz+pad;break;case'center':x=(c.width-tw)/2;y=(c.height+sz)/2;break;case'bottom-left':x=pad;y=c.height-pad;break;default:x=c.width-tw-pad;y=c.height-pad;}ctx.fillText(txt,x,y);const dlb=document.getElementById('dlb');dlb.style.display='block';dlb.onclick=()=>{c.toBlob(b=>{const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='watermarked.png';a.click()},'image/png')};}
+['wmText','wmSize','wmOpacity','wmColor'].forEach(id=>document.getElementById(id).addEventListener('input',applyWM));
+</script>
+<footer class="footer">
+  <div class="footer-bottom">
+    <p>© 2026 ZenithCraft Studio · <a href="../index.html" style="color:var(--accent2)">All 28 Free Tools</a></p>
+    <div class="footer-links"><a href="../index.html">Home</a><a href="../blogs.html">Blog</a><a href="../faqs.html">FAQs</a></div>
+  </div>
+</footer>
+<script>
+const themeBtn=document.getElementById("themeBtn");
+const html=document.documentElement;
+const sv=localStorage.getItem("zc-theme")||"dark";
+if(sv==="light"){html.setAttribute("data-theme","light");themeBtn.textContent="☀️";}
+themeBtn.addEventListener("click",()=>{const l=html.getAttribute("data-theme")==="light";html.setAttribute("data-theme",l?"dark":"light");themeBtn.textContent=l?"🌙":"☀️";localStorage.setItem("zc-theme",l?"dark":"light");});
+<\/script>
+</body>
+</html>

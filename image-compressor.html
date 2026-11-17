@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Free Image Compressor Online – Reduce JPG PNG WEBP Size | ZenithCraft</title>
+<meta name="description" content="Compress JPG, PNG and WEBP images online for free. Reduce file size by up to 85% without visible quality loss. No upload, no sign-up, 100% private browser tool."/>
+<meta name="keywords" content="image compressor, compress jpg online, reduce image size, compress png free, webp compressor, image size reducer"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://aishkhan0586.github.io/ZenithCraft-Free-Tools/tools/image-compressor.html"/>
+<meta property="og:title" content="Free Image Compressor – ZenithCraft"/>
+<meta property="og:description" content="Compress JPG, PNG, WEBP images free. Up to 85% size reduction. No uploads. 100% browser-based."/>
+<meta property="og:type" content="website"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Image Compressor","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free browser-based image compressor. Compress JPG, PNG and WEBP images without uploading to any server.","url":"https://aishkhan0586.github.io/ZenithCraft-Free-Tools/tools/image-compressor.html"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#0a0a0f;--bg2:#111118;--bg3:#1a1a24;--border:rgba(255,255,255,0.08);--border-hover:rgba(255,255,255,0.18);--text:#f0f0f8;--text2:#9090a8;--text3:#5a5a70;--accent:#7c3aed;--accent2:#a855f7;--accent3:#06b6d4;--accent4:#10b981;--grad:linear-gradient(135deg,#7c3aed 0%,#a855f7 50%,#06b6d4 100%);--shadow:0 4px 24px rgba(124,58,237,0.15);--radius:16px;--radius2:12px;--transition:0.25s cubic-bezier(0.4,0,0.2,1)}
+[data-theme="light"]{--bg:#f8f8ff;--bg2:#ffffff;--bg3:#f0f0f8;--border:rgba(0,0,0,0.08);--border-hover:rgba(0,0,0,0.18);--text:#0a0a1a;--text2:#4a4a6a;--text3:#9090b0}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden;transition:background var(--transition),color var(--transition)}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+button{cursor:pointer;border:none;background:none;font-family:inherit}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,10,15,0.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);transition:background var(--transition)}
+[data-theme="light"] .nav{background:rgba(248,248,255,0.85)}
+.nav-inner{max-width:1280px;margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav-logo{display:flex;align-items:center;gap:10px;font-size:1.2rem;font-weight:800;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;white-space:nowrap}
+.nav-logo span{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:10px;background:var(--grad);font-size:1rem;font-weight:900;color:#fff;-webkit-text-fill-color:#fff}
+.nav-links{display:flex;align-items:center;gap:4px}
+.nav-links a{padding:8px 14px;border-radius:8px;font-size:0.875rem;font-weight:500;color:var(--text2);transition:all var(--transition)}
+.nav-links a:hover,.nav-links a.active{color:var(--text);background:var(--bg3)}
+.nav-right{display:flex;align-items:center;gap:10px}
+.theme-btn{width:40px;height:40px;border-radius:10px;background:var(--bg3);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:var(--text2);transition:all var(--transition)}
+.theme-btn:hover{color:var(--text);border-color:var(--border-hover)}
+.nav-back{padding:9px 18px;border-radius:10px;background:var(--bg3);border:1px solid var(--border);font-size:0.875rem;font-weight:600;color:var(--text);transition:all var(--transition)}
+.nav-back:hover{border-color:var(--border-hover)}
+.hamburger{display:none;width:40px;height:40px;border-radius:10px;background:var(--bg3);border:1px solid var(--border);flex-direction:column;align-items:center;justify-content:center;gap:5px}
+.hamburger span{display:block;width:18px;height:2px;background:var(--text2);border-radius:2px}
+.mobile-menu{display:none;position:fixed;top:68px;left:0;right:0;bottom:0;background:var(--bg);z-index:999;padding:24px;overflow-y:auto;flex-direction:column;gap:8px}
+.mobile-menu.open{display:flex}
+.mobile-menu a{padding:14px 16px;border-radius:12px;font-size:1rem;font-weight:500;color:var(--text2);border:1px solid var(--border);transition:all var(--transition)}
+.mobile-menu a:hover{color:var(--text);background:var(--bg3)}
+
+/* TOOL HERO */
+.tool-hero{padding:120px 24px 48px;background:var(--bg);text-align:center;position:relative;overflow:hidden}
+.tool-hero::before{content:'';position:absolute;top:-150px;left:50%;transform:translateX(-50%);width:500px;height:500px;border-radius:50%;background:radial-gradient(ellipse,rgba(124,58,237,0.1) 0%,transparent 70%);pointer-events:none}
+.tool-hero-inner{max-width:680px;margin:0 auto;position:relative;z-index:1}
+.tool-badge{display:inline-flex;align-items:center;gap:8px;padding:7px 16px;border-radius:50px;background:rgba(124,58,237,0.12);border:1px solid rgba(124,58,237,0.3);font-size:0.78rem;font-weight:700;color:var(--accent2);margin-bottom:20px;text-transform:uppercase;letter-spacing:0.04em}
+.tool-hero h1{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;line-height:1.15;letter-spacing:-0.02em;margin-bottom:14px}
+.grad-text{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.tool-hero p{font-size:0.975rem;color:var(--text2);max-width:540px;margin:0 auto 20px;line-height:1.7}
+.tool-features{display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap}
+.tool-feat{display:flex;align-items:center;gap:6px;font-size:0.8rem;color:var(--text3);font-weight:500}
+.tool-feat::before{content:'✓';color:var(--accent4);font-weight:700}
+
+/* TOOL WRAPPER */
+.tool-wrap{padding:0 24px 80px;background:var(--bg)}
+.tool-inner{max-width:860px;margin:0 auto}
+
+/* DROP ZONE */
+.dropzone{
+  border:2px dashed var(--border);border-radius:var(--radius);
+  padding:60px 24px;text-align:center;
+  background:var(--bg2);transition:all var(--transition);cursor:pointer;
+  position:relative;
+}
+.dropzone:hover,.dropzone.drag-over{border-color:var(--accent2);background:rgba(124,58,237,0.04)}
+.dropzone-icon{font-size:3rem;margin-bottom:16px;display:block}
+.dropzone h3{font-size:1.1rem;font-weight:700;margin-bottom:8px}
+.dropzone p{font-size:0.875rem;color:var(--text2);margin-bottom:20px}
+.dropzone-btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:10px;background:var(--grad);font-size:0.9rem;font-weight:700;color:#fff;transition:all var(--transition)}
+.dropzone-btn:hover{opacity:0.9;transform:translateY(-1px)}
+.dropzone input[type="file"]{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
+.supported{font-size:0.75rem;color:var(--text3);margin-top:12px}
+
+/* SETTINGS */
+.settings-panel{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:28px;margin-top:16px;display:none}
+.settings-panel.show{display:block}
+.settings-title{font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--text3);margin-bottom:20px}
+.setting-row{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:20px;flex-wrap:wrap}
+.setting-row:last-child{margin-bottom:0}
+.setting-label{font-size:0.9rem;font-weight:600}
+.setting-label span{display:block;font-size:0.775rem;color:var(--text3);font-weight:400;margin-top:2px}
+.quality-wrap{display:flex;align-items:center;gap:14px;flex:1;min-width:200px}
+.quality-slider{flex:1;-webkit-appearance:none;height:4px;border-radius:4px;background:var(--bg3);outline:none}
+.quality-slider::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:var(--grad);cursor:pointer}
+.quality-slider::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--accent2);cursor:pointer;border:none}
+.quality-val{width:40px;text-align:right;font-size:0.9rem;font-weight:700;color:var(--accent2)}
+.format-btns{display:flex;gap:8px;flex-wrap:wrap}
+.fmt-btn{padding:8px 16px;border-radius:8px;font-size:0.825rem;font-weight:600;border:1px solid var(--border);color:var(--text2);background:var(--bg3);transition:all var(--transition)}
+.fmt-btn:hover,.fmt-btn.active{background:var(--grad);color:#fff;border-color:transparent}
+.compress-btn{width:100%;padding:16px;border-radius:12px;background:var(--grad);font-size:1rem;font-weight:700;color:#fff;margin-top:20px;transition:all var(--transition);box-shadow:0 0 40px rgba(124,58,237,0.2)}
+.compress-btn:hover{opacity:0.9;transform:translateY(-1px)}
+.compress-btn:disabled{opacity:0.5;transform:none;cursor:not-allowed}
+
+/* PREVIEW */
+.preview-wrap{display:none;margin-top:20px}
+.preview-wrap.show{display:block}
+.preview-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.preview-box{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius2);padding:16px;text-align:center}
+.preview-box img{max-width:100%;max-height:200px;object-fit:contain;border-radius:8px;margin-bottom:12px}
+.preview-label{font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--text3);margin-bottom:6px}
+.preview-size{font-size:1.1rem;font-weight:800}
+.preview-size.saved{color:var(--accent4)}
+.savings-bar{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius2);padding:20px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.savings-stat{text-align:center}
+.savings-stat strong{display:block;font-size:1.4rem;font-weight:800;color:var(--accent4)}
+.savings-stat span{font-size:0.75rem;color:var(--text3);text-transform:uppercase;letter-spacing:0.05em}
+.download-btn{width:100%;padding:16px;border-radius:12px;background:var(--accent4);font-size:1rem;font-weight:700;color:#fff;transition:all var(--transition)}
+.download-btn:hover{opacity:0.9;transform:translateY(-1px)}
+.reset-btn{width:100%;padding:12px;border-radius:12px;background:var(--bg3);border:1px solid var(--border);font-size:0.9rem;font-weight:600;color:var(--text);margin-top:10px;transition:all var(--transition)}
+.reset-btn:hover{border-color:var(--border-hover)}
+
+/* HOW IT WORKS */
+.how-section{padding:64px 24px;background:var(--bg2)}
+.how-inner{max-width:860px;margin:0 auto}
+.section-label{display:inline-flex;align-items:center;gap:8px;font-size:0.75rem;font-weight:700;color:var(--accent2);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:12px}
+.section-label::before{content:'';width:20px;height:2px;background:var(--accent2);border-radius:2px}
+.section-title{font-size:clamp(1.5rem,3vw,2rem);font-weight:800;line-height:1.2;letter-spacing:-0.02em;margin-bottom:40px}
+.steps-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.step-card{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius2);padding:24px;transition:all var(--transition)}
+.step-card:hover{border-color:var(--border-hover);transform:translateY(-3px)}
+.step-num{width:36px;height:36px;border-radius:10px;background:rgba(124,58,237,0.15);display:flex;align-items:center;justify-content:center;font-size:0.875rem;font-weight:800;color:var(--accent2);margin-bottom:14px}
+.step-card h4{font-size:0.9rem;font-weight:700;margin-bottom:8px}
+.step-card p{font-size:0.825rem;color:var(--text2);line-height:1.6}
+
+/* RELATED TOOLS */
+.related-section{padding:48px 24px;background:var(--bg)}
+.related-inner{max-width:860px;margin:0 auto}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:24px}
+.related-card{display:flex;align-items:center;gap:12px;padding:16px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius2);transition:all var(--transition)}
+.related-card:hover{border-color:rgba(124,58,237,0.4);transform:translateY(-2px)}
+.related-icon{width:38px;height:38px;border-radius:10px;background:var(--bg3);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.related-card h5{font-size:0.825rem;font-weight:700;margin-bottom:2px}
+.related-card span{font-size:0.75rem;color:var(--text3)}
+
+/* FOOTER */
+.footer{background:var(--bg);border-top:1px solid var(--border);padding:48px 24px 28px}
+.footer-inner{max-width:1280px;margin:0 auto}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-bottom p{font-size:0.8rem;color:var(--text3)}
+.footer-links{display:flex;gap:20px;flex-wrap:wrap}
+.footer-links a{font-size:0.8rem;color:var(--text3);transition:color var(--transition)}
+.footer-links a:hover{color:var(--text)}
+
+@media(max-width:768px){
+  .nav-links,.nav-back{display:none}
+  .hamburger{display:flex}
+  .preview-grid{grid-template-columns:1fr}
+  .setting-row{flex-direction:column;align-items:flex-start}
+}
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-26HYXT72FK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-26HYXT72FK');
+</script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><span>Z</span>ZenithCraft</a>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="image-resizer.html">Resizer</a>
+      <a href="jpg-to-png-converter.html">Converter</a>
+      <a href="background-remover.html">BG Remover</a>
+      <a href="../blogs.html">Blog</a>
+      <a href="../faqs.html">FAQs</a>
+    </div>
+    <div class="nav-right">
+      <button class="theme-btn" id="themeBtn">🌙</button>
+      <a href="../index.html#all-tools" class="nav-back">← All Tools</a>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html">🏠 Home</a>
+  <a href="image-resizer.html">📐 Image Resizer</a>
+  <a href="jpg-to-png-converter.html">🔄 Format Converter</a>
+  <a href="background-remover.html">✂️ BG Remover</a>
+  <a href="../blogs.html">📚 Blog</a>
+  <a href="../faqs.html">❓ FAQs</a>
+</div>
+
+<section class="tool-hero">
+  <div class="tool-hero-inner">
+    <div class="tool-badge">📉 Image Tool</div>
+    <h1>Free <span class="grad-text">Image Compressor</span></h1>
+    <p>Reduce JPG, PNG and WEBP file sizes by up to 85% — instantly in your browser. No uploads, no sign-up, completely private.</p>
+    <div class="tool-features">
+      <span class="tool-feat">JPG, PNG, WEBP</span>
+      <span class="tool-feat">Up to 85% smaller</span>
+      <span class="tool-feat">No upload needed</span>
+      <span class="tool-feat">100% free forever</span>
+    </div>
+  </div>
+</section>
+
+<div class="tool-wrap">
+  <div class="tool-inner">
+
+    <!-- DROP ZONE -->
+    <div class="dropzone" id="dropzone">
+      <span class="dropzone-icon">🖼️</span>
+      <h3>Drop your image here</h3>
+      <p>or click to browse from your device</p>
+      <span class="dropzone-btn">Choose Image</span>
+      <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp"/>
+      <p class="supported">Supports JPG, PNG, WEBP · Max recommended: 20MB</p>
+    </div>
+
+    <!-- SETTINGS -->
+    <div class="settings-panel" id="settingsPanel">
+      <div class="settings-title">⚙️ Compression Settings</div>
+      <div class="setting-row">
+        <div class="setting-label">
+          Quality
+          <span>Lower = smaller file, slightly less sharp</span>
+        </div>
+        <div class="quality-wrap">
+          <input type="range" class="quality-slider" id="qualitySlider" min="10" max="100" value="75"/>
+          <span class="quality-val" id="qualityVal">75</span>
+        </div>
+      </div>
+      <div class="setting-row">
+        <div class="setting-label">
+          Output Format
+          <span>Keep original or convert</span>
+        </div>
+        <div class="format-btns">
+          <button class="fmt-btn active" data-fmt="same">Keep Original</button>
+          <button class="fmt-btn" data-fmt="image/jpeg">JPG</button>
+          <button class="fmt-btn" data-fmt="image/png">PNG</button>
+          <button class="fmt-btn" data-fmt="image/webp">WEBP</button>
+        </div>
+      </div>
+      <button class="compress-btn" id="compressBtn">⚡ Compress Image</button>
+    </div>
+
+    <!-- PREVIEW -->
+    <div class="preview-wrap" id="previewWrap">
+      <div class="savings-bar">
+        <div class="savings-stat">
+          <strong id="savingsPct">—</strong>
+          <span>Size Saved</span>
+        </div>
+        <div class="savings-stat">
+          <strong id="origSize">—</strong>
+          <span>Original</span>
+        </div>
+        <div class="savings-stat">
+          <strong id="compSize">—</strong>
+          <span>Compressed</span>
+        </div>
+      </div>
+      <div class="preview-grid">
+        <div class="preview-box">
+          <div class="preview-label">Original</div>
+          <img id="origPreview" src="" alt="Original image preview"/>
+          <div class="preview-size" id="origSizeBox">—</div>
+        </div>
+        <div class="preview-box">
+          <div class="preview-label">Compressed</div>
+          <img id="compPreview" src="" alt="Compressed image preview"/>
+          <div class="preview-size saved" id="compSizeBox">—</div>
+        </div>
+      </div>
+      <button class="download-btn" id="downloadBtn">⬇️ Download Compressed Image</button>
+      <button class="reset-btn" id="resetBtn">↺ Compress Another Image</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<section class="how-section">
+  <div class="how-inner">
+    <div class="section-label">How It Works</div>
+    <h2 class="section-title">3 Steps — Zero Uploads</h2>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h4>Select Your Image</h4>
+        <p>Drop a JPG, PNG, or WEBP file onto the tool or click to browse. The file is loaded into your browser's memory — never sent anywhere.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h4>Adjust Settings</h4>
+        <p>Set your quality level (75 is ideal for most cases) and choose output format. WEBP gives the smallest file size for web use.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h4>Download Result</h4>
+        <p>Hit Compress. Your browser processes the image using HTML5 Canvas and offers the compressed file for instant download.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RELATED TOOLS -->
+<section class="related-section">
+  <div class="related-inner">
+    <div class="section-label">Related Tools</div>
+    <h2 class="section-title" style="font-size:1.3rem;margin-bottom:0">More Image Tools</h2>
+    <div class="related-grid">
+      <a href="image-resizer.html" class="related-card">
+        <div class="related-icon">📐</div>
+        <div><h5>Image Resizer</h5><span>Resize to exact pixels</span></div>
+      </a>
+      <a href="jpg-to-png-converter.html" class="related-card">
+        <div class="related-icon">🔄</div>
+        <div><h5>Format Converter</h5><span>JPG / PNG / WEBP</span></div>
+      </a>
+      <a href="background-remover.html" class="related-card">
+        <div class="related-icon">✂️</div>
+        <div><h5>BG Remover</h5><span>Remove backgrounds</span></div>
+      </a>
+      <a href="watermark-adder.html" class="related-card">
+        <div class="related-icon">💧</div>
+        <div><h5>Watermark Adder</h5><span>Protect your images</span></div>
+      </a>
+      <a href="image-flip-rotate.html" class="related-card">
+        <div class="related-icon">🔁</div>
+        <div><h5>Flip & Rotate</h5><span>Rotate any angle</span></div>
+      </a>
+      <a href="favicon-generator.html" class="related-card">
+        <div class="related-icon">⭐</div>
+        <div><h5>Favicon Generator</h5><span>ICO from any image</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-bottom">
+      <p>© 2026 ZenithCraft Studio · <a href="../index.html" style="color:var(--accent2)">All 28 Free Tools</a></p>
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="../blogs.html">Blog</a>
+        <a href="../faqs.html">FAQs</a>
+        <a href="../sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Theme
+const themeBtn=document.getElementById('themeBtn');
+const html=document.documentElement;
+const saved=localStorage.getItem('zc-theme')||'dark';
+if(saved==='light'){html.setAttribute('data-theme','light');themeBtn.textContent='☀️';}
+themeBtn.addEventListener('click',()=>{const isLight=html.getAttribute('data-theme')==='light';html.setAttribute('data-theme',isLight?'dark':'light');themeBtn.textContent=isLight?'🌙':'☀️';localStorage.setItem('zc-theme',isLight?'dark':'light');});
+
+// Mobile Menu
+const hamburger=document.getElementById('hamburger');
+const mobileMenu=document.getElementById('mobileMenu');
+hamburger.addEventListener('click',()=>{mobileMenu.classList.toggle('open');document.body.style.overflow=mobileMenu.classList.contains('open')?'hidden':'';});
+
+// State
+let origFile=null, compressedBlob=null, selectedFormat='same';
+
+// Format buttons
+document.querySelectorAll('.fmt-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.fmt-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    selectedFormat=btn.dataset.fmt;
+  });
+});
+
+// Quality slider
+const slider=document.getElementById('qualitySlider');
+const qualVal=document.getElementById('qualityVal');
+slider.addEventListener('input',()=>qualVal.textContent=slider.value);
+
+// Drag & Drop
+const dropzone=document.getElementById('dropzone');
+dropzone.addEventListener('dragover',e=>{e.preventDefault();dropzone.classList.add('drag-over');});
+dropzone.addEventListener('dragleave',()=>dropzone.classList.remove('drag-over'));
+dropzone.addEventListener('drop',e=>{e.preventDefault();dropzone.classList.remove('drag-over');const f=e.dataTransfer.files[0];if(f&&f.type.startsWith('image/'))loadFile(f);});
+
+// File input
+document.getElementById('fileInput').addEventListener('change',e=>{if(e.target.files[0])loadFile(e.target.files[0]);});
+
+function loadFile(file){
+  origFile=file;
+  document.getElementById('settingsPanel').classList.add('show');
+  document.getElementById('previewWrap').classList.remove('show');
+  const reader=new FileReader();
+  reader.onload=e=>{document.getElementById('origPreview').src=e.target.result;};
+  reader.readAsDataURL(file);
+}
+
+function formatBytes(b){
+  if(b>=1048576)return (b/1048576).toFixed(2)+' MB';
+  if(b>=1024)return (b/1024).toFixed(1)+' KB';
+  return b+' B';
+}
+
+// Compress
+document.getElementById('compressBtn').addEventListener('click',()=>{
+  if(!origFile)return;
+  const btn=document.getElementById('compressBtn');
+  btn.textContent='⏳ Compressing...';btn.disabled=true;
+  const quality=parseInt(slider.value)/100;
+  const fmt=selectedFormat==='same'?origFile.type:selectedFormat;
+  const img=new Image();
+  const url=URL.createObjectURL(origFile);
+  img.onload=()=>{
+    const canvas=document.createElement('canvas');
+    canvas.width=img.naturalWidth;canvas.height=img.naturalHeight;
+    const ctx=canvas.getContext('2d');
+    ctx.drawImage(img,0,0);
+    canvas.toBlob(blob=>{
+      compressedBlob=blob;
+      const compUrl=URL.createObjectURL(blob);
+      document.getElementById('compPreview').src=compUrl;
+      const origB=origFile.size, compB=blob.size;
+      const saved=Math.round((1-(compB/origB))*100);
+      document.getElementById('savingsPct').textContent=saved+'%';
+      document.getElementById('origSize').textContent=formatBytes(origB);
+      document.getElementById('compSize').textContent=formatBytes(compB);
+      document.getElementById('origSizeBox').textContent=formatBytes(origB);
+      document.getElementById('compSizeBox').textContent=formatBytes(compB);
+      document.getElementById('previewWrap').classList.add('show');
+      btn.textContent='⚡ Compress Image';btn.disabled=false;
+      URL.revokeObjectURL(url);
+    },fmt,quality);
+  };
+  img.src=url;
+});
+
+// Download
+document.getElementById('downloadBtn').addEventListener('click',()=>{
+  if(!compressedBlob)return;
+  const ext=compressedBlob.type.split('/')[1];
+  const name=origFile.name.replace(/\.[^/.]+$/,'')+'-compressed.'+ext;
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(compressedBlob);
+  a.download=name;a.click();
+});
+
+// Reset
+document.getElementById('resetBtn').addEventListener('click',()=>{
+  origFile=null;compressedBlob=null;
+  document.getElementById('settingsPanel').classList.remove('show');
+  document.getElementById('previewWrap').classList.remove('show');
+  document.getElementById('fileInput').value='';
+  document.getElementById('origPreview').src='';
+  document.getElementById('compPreview').src='';
+});
+</script>
+</body>
+</html>

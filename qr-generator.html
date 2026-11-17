@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Free QR Code Generator – Create QR Codes Instantly | ZenithCraft</title>
+<meta name="description" content="Generate QR codes for URLs, text, email, phone, WiFi and SMS. Download as PNG or SVG. Free, instant, no sign-up. 100% browser-based."/>
+<meta name="keywords" content="qr code generator, free qr code, create qr code, qr code maker, qr code for website, wifi qr code"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://aishkhan0586.github.io/ZenithCraft-Free-Tools/tools/qr-generator.html"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"QR Code Generator","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free QR code generator. Create QR codes for URLs, WiFi, email, phone, SMS. Download PNG or SVG.","url":"https://aishkhan0586.github.io/ZenithCraft-Free-Tools/tools/qr-generator.html"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+<style>
+:root{--bg:#0a0a0f;--bg2:#111118;--bg3:#1a1a24;--border:rgba(255,255,255,0.08);--border-hover:rgba(255,255,255,0.18);--text:#f0f0f8;--text2:#9090a8;--text3:#5a5a70;--accent2:#a855f7;--accent4:#10b981;--grad:linear-gradient(135deg,#7c3aed,#a855f7,#06b6d4);--radius:16px;--radius2:12px;--transition:0.25s cubic-bezier(0.4,0,0.2,1)}
+[data-theme="light"]{--bg:#f8f8ff;--bg2:#fff;--bg3:#f0f0f8;--border:rgba(0,0,0,0.08);--border-hover:rgba(0,0,0,0.18);--text:#0a0a1a;--text2:#4a4a6a;--text3:#9090b0}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;transition:background var(--transition),color var(--transition)}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;border:none;background:none;font-family:inherit}
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,10,15,0.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+[data-theme="light"] .nav{background:rgba(248,248,255,0.85)}
+.nav-inner{max-width:1280px;margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav-logo{display:flex;align-items:center;gap:10px;font-size:1.2rem;font-weight:800;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.nav-logo span{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:10px;background:var(--grad);font-size:1rem;font-weight:900;color:#fff;-webkit-text-fill-color:#fff}
+.nav-right{display:flex;align-items:center;gap:10px}
+.theme-btn{width:40px;height:40px;border-radius:10px;background:var(--bg3);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:var(--text2);transition:all var(--transition)}
+.nav-back{padding:9px 18px;border-radius:10px;background:var(--bg3);border:1px solid var(--border);font-size:0.875rem;font-weight:600;color:var(--text);transition:all var(--transition)}
+.nav-back:hover{border-color:var(--border-hover)}
+.tool-hero{padding:120px 24px 40px;text-align:center;position:relative}
+.tool-hero::before{content:'';position:absolute;top:-150px;left:50%;transform:translateX(-50%);width:500px;height:500px;border-radius:50%;background:radial-gradient(ellipse,rgba(124,58,237,0.1) 0%,transparent 70%);pointer-events:none}
+.tool-badge{display:inline-flex;align-items:center;gap:8px;padding:7px 16px;border-radius:50px;background:rgba(124,58,237,0.12);border:1px solid rgba(124,58,237,0.3);font-size:0.78rem;font-weight:700;color:var(--accent2);margin-bottom:20px;text-transform:uppercase;letter-spacing:0.04em}
+.tool-hero h1{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;line-height:1.15;letter-spacing:-0.02em;margin-bottom:14px}
+.grad-text{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.tool-hero p{font-size:0.975rem;color:var(--text2);max-width:540px;margin:0 auto}
+.tool-wrap{padding:0 24px 80px}
+.tool-inner{max-width:860px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+.left-col,.right-col{display:flex;flex-direction:column;gap:16px}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:24px}
+.type-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.type-tab{padding:8px 14px;border-radius:8px;font-size:0.8rem;font-weight:600;border:1px solid var(--border);color:var(--text2);background:var(--bg3);transition:all var(--transition)}
+.type-tab:hover,.type-tab.active{background:var(--grad);color:#fff;border-color:transparent}
+.input-group{margin-bottom:14px}
+.input-label{font-size:0.82rem;font-weight:600;color:var(--text2);margin-bottom:6px;display:block}
+.text-input{width:100%;padding:12px 14px;border-radius:10px;background:var(--bg3);border:1px solid var(--border);color:var(--text);font-size:0.9rem;font-family:'Inter',sans-serif;outline:none;transition:border-color var(--transition)}
+.text-input:focus{border-color:var(--accent2)}
+.text-input::placeholder{color:var(--text3)}
+.gen-btn{width:100%;padding:14px;border-radius:11px;background:var(--grad);font-size:0.95rem;font-weight:700;color:#fff;transition:all var(--transition)}
+.gen-btn:hover{opacity:0.9;transform:translateY(-1px)}
+.settings-title{font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--text3);margin-bottom:14px}
+.color-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.color-row label{font-size:0.85rem;font-weight:500}
+input[type="color"]{width:40px;height:30px;border-radius:6px;border:1px solid var(--border);background:var(--bg3);cursor:pointer}
+.size-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.size-row label{font-size:0.85rem;font-weight:500}
+.size-row span{font-size:0.85rem;font-weight:700;color:var(--accent2)}
+.size-slider{flex:1;margin:0 14px;-webkit-appearance:none;height:4px;border-radius:4px;background:var(--bg3);outline:none}
+.size-slider::-webkit-slider-thumb{-webkit-appearance:none;width:16px;height:16px;border-radius:50%;background:var(--accent2);cursor:pointer}
+.qr-preview{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:24px;text-align:center}
+.qr-placeholder{width:100%;aspect-ratio:1;background:var(--bg3);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:3rem;margin-bottom:16px}
+#qrCanvas{max-width:100%;border-radius:12px;display:none}
+.qr-placeholder-text{font-size:0.85rem;color:var(--text3)}
+.download-row{display:flex;gap:10px;margin-top:16px}
+.dl-btn{flex:1;padding:12px;border-radius:10px;font-size:0.875rem;font-weight:700;transition:all var(--transition)}
+.dl-btn.png{background:var(--grad);color:#fff}
+.dl-btn.png:hover{opacity:0.9}
+.dl-btn.svg-dl{background:var(--bg3);border:1px solid var(--border);color:var(--text)}
+.dl-btn.svg-dl:hover{border-color:var(--border-hover)}
+.type-fields{display:none}
+.type-fields.show{display:block}
+.footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 24px}
+.footer-bottom{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-bottom p{font-size:0.8rem;color:var(--text3)}
+.footer-links{display:flex;gap:20px}
+.footer-links a{font-size:0.8rem;color:var(--text3);transition:color var(--transition)}
+.footer-links a:hover{color:var(--text)}
+@media(max-width:768px){.tool-inner{grid-template-columns:1fr}.nav-back{display:none}}
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-26HYXT72FK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-26HYXT72FK');
+</script>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><span>Z</span>ZenithCraft</a>
+    <div class="nav-right">
+      <button class="theme-btn" id="themeBtn">🌙</button>
+      <a href="../index.html#all-tools" class="nav-back">← All Tools</a>
+    </div>
+  </div>
+</nav>
+<section class="tool-hero">
+  <div style="max-width:680px;margin:0 auto;position:relative;z-index:1">
+    <div class="tool-badge">📱 Security Tool</div>
+    <h1>Free <span class="grad-text">QR Code Generator</span></h1>
+    <p>Create QR codes for URLs, WiFi, email, phone and SMS. Download as PNG or SVG. No sign-up needed.</p>
+  </div>
+</section>
+<div class="tool-wrap">
+  <div class="tool-inner">
+    <div class="left-col">
+      <div class="card">
+        <div class="type-tabs">
+          <button class="type-tab active" data-type="url">🌐 URL</button>
+          <button class="type-tab" data-type="text">📝 Text</button>
+          <button class="type-tab" data-type="email">📧 Email</button>
+          <button class="type-tab" data-type="phone">📞 Phone</button>
+          <button class="type-tab" data-type="wifi">📶 WiFi</button>
+          <button class="type-tab" data-type="sms">💬 SMS</button>
+        </div>
+        <div class="type-fields show" id="field-url"><div class="input-group"><label class="input-label">Website URL</label><input class="text-input" id="in-url" placeholder="https://example.com" type="url"/></div></div>
+        <div class="type-fields" id="field-text"><div class="input-group"><label class="input-label">Text Content</label><textarea class="text-input" id="in-text" rows="4" placeholder="Enter any text…" style="resize:vertical"></textarea></div></div>
+        <div class="type-fields" id="field-email"><div class="input-group"><label class="input-label">Email Address</label><input class="text-input" id="in-email" placeholder="hello@example.com" type="email"/></div><div class="input-group"><label class="input-label">Subject (optional)</label><input class="text-input" id="in-subject" placeholder="Subject line"/></div></div>
+        <div class="type-fields" id="field-phone"><div class="input-group"><label class="input-label">Phone Number</label><input class="text-input" id="in-phone" placeholder="+1 234 567 8900" type="tel"/></div></div>
+        <div class="type-fields" id="field-wifi"><div class="input-group"><label class="input-label">Network Name (SSID)</label><input class="text-input" id="in-ssid" placeholder="MyWiFiNetwork"/></div><div class="input-group"><label class="input-label">Password</label><input class="text-input" id="in-wpass" placeholder="WiFi password" type="password"/></div><div class="input-group"><label class="input-label">Security Type</label><select class="text-input" id="in-wtype"><option value="WPA">WPA/WPA2</option><option value="WEP">WEP</option><option value="nopass">None (Open)</option></select></div></div>
+        <div class="type-fields" id="field-sms"><div class="input-group"><label class="input-label">Phone Number</label><input class="text-input" id="in-sms-num" placeholder="+1 234 567 8900" type="tel"/></div><div class="input-group"><label class="input-label">Message (optional)</label><textarea class="text-input" id="in-sms-msg" rows="3" placeholder="Pre-filled message…" style="resize:vertical"></textarea></div></div>
+        <button class="gen-btn" id="genBtn">📱 Generate QR Code</button>
+      </div>
+      <div class="card">
+        <div class="settings-title">🎨 Customise</div>
+        <div class="color-row"><label>Foreground Color</label><input type="color" id="fgColor" value="#7c3aed"/></div>
+        <div class="color-row"><label>Background Color</label><input type="color" id="bgColor" value="#ffffff"/></div>
+        <div class="size-row"><label>Size</label><input type="range" class="size-slider" id="sizeSlider" min="128" max="512" value="256" step="32"/><span id="sizeVal">256px</span></div>
+      </div>
+    </div>
+    <div class="right-col">
+      <div class="qr-preview">
+        <div class="qr-placeholder" id="qrPlaceholder">📱</div>
+        <canvas id="qrCanvas"></canvas>
+        <p class="qr-placeholder-text" id="qrPlaceholderText">Fill in the form and click "Generate QR Code"</p>
+        <div class="download-row" id="downloadRow" style="display:none">
+          <button class="dl-btn png" id="dlPng">⬇️ Download PNG</button>
+          <button class="dl-btn svg-dl" id="dlSvg">⬇️ Download SVG</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+  <div class="footer-bottom">
+    <p>© 2026 ZenithCraft Studio · <a href="../index.html" style="color:var(--accent2)">All 28 Free Tools</a></p>
+    <div class="footer-links"><a href="../index.html">Home</a><a href="../blogs.html">Blog</a><a href="../faqs.html">FAQs</a></div>
+  </div>
+</footer>
+<script>
+const themeBtn=document.getElementById('themeBtn');
+const html=document.documentElement;
+const sv=localStorage.getItem('zc-theme')||'dark';
+if(sv==='light'){html.setAttribute('data-theme','light');themeBtn.textContent='☀️';}
+themeBtn.addEventListener('click',()=>{const l=html.getAttribute('data-theme')==='light';html.setAttribute('data-theme',l?'dark':'light');themeBtn.textContent=l?'🌙':'☀️';localStorage.setItem('zc-theme',l?'dark':'light');});
+
+let currentType='url';
+document.querySelectorAll('.type-tab').forEach(tab=>{
+  tab.addEventListener('click',()=>{
+    document.querySelectorAll('.type-tab').forEach(t=>t.classList.remove('active'));
+    document.querySelectorAll('.type-fields').forEach(f=>f.classList.remove('show'));
+    tab.classList.add('active');
+    currentType=tab.dataset.type;
+    document.getElementById('field-'+currentType).classList.add('show');
+  });
+});
+
+document.getElementById('sizeSlider').addEventListener('input',function(){document.getElementById('sizeVal').textContent=this.value+'px';});
+
+function getQRData(){
+  switch(currentType){
+    case 'url':return document.getElementById('in-url').value||'https://zenithcraft.example.com';
+    case 'text':return document.getElementById('in-text').value||'Hello from ZenithCraft!';
+    case 'email':{const e=document.getElementById('in-email').value;const s=document.getElementById('in-subject').value;return 'mailto:'+e+(s?'?subject='+encodeURIComponent(s):'');}
+    case 'phone':return 'tel:'+document.getElementById('in-phone').value;
+    case 'wifi':{const ssid=document.getElementById('in-ssid').value;const pass=document.getElementById('in-wpass').value;const type=document.getElementById('in-wtype').value;return `WIFI:T:${type};S:${ssid};P:${pass};;`;}
+    case 'sms':{const num=document.getElementById('in-sms-num').value;const msg=document.getElementById('in-sms-msg').value;return 'sms:'+num+(msg?'?body='+encodeURIComponent(msg):'');}
+    default:return 'https://zenithcraft.example.com';
+  }
+}
+
+document.getElementById('genBtn').addEventListener('click',()=>{
+  const data=getQRData();
+  const size=parseInt(document.getElementById('sizeSlider').value);
+  const fg=document.getElementById('fgColor').value;
+  const bg=document.getElementById('bgColor').value;
+  const canvas=document.getElementById('qrCanvas');
+  QRCode.toCanvas(canvas,data,{width:size,color:{dark:fg,light:bg},errorCorrectionLevel:'M'},err=>{
+    if(err){alert('Error generating QR code: '+err.message);return;}
+    document.getElementById('qrPlaceholder').style.display='none';
+    document.getElementById('qrPlaceholderText').style.display='none';
+    canvas.style.display='block';
+    document.getElementById('downloadRow').style.display='flex';
+  });
+});
+
+document.getElementById('dlPng').addEventListener('click',()=>{
+  const canvas=document.getElementById('qrCanvas');
+  const a=document.createElement('a');
+  a.download='qrcode-zenithcraft.png';
+  a.href=canvas.toDataURL('image/png');
+  a.click();
+});
+
+document.getElementById('dlSvg').addEventListener('click',()=>{
+  const data=getQRData();
+  const fg=document.getElementById('fgColor').value;
+  const bg=document.getElementById('bgColor').value;
+  QRCode.toString(data,{type:'svg',color:{dark:fg,light:bg},errorCorrectionLevel:'M'},(err,svg)=>{
+    if(err)return;
+    const blob=new Blob([svg],{type:'image/svg+xml'});
+    const a=document.createElement('a');
+    a.download='qrcode-zenithcraft.svg';
+    a.href=URL.createObjectURL(blob);
+    a.click();
+  });
+});
+</script>
+</body>
+</html>
